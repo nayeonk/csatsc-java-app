@@ -1,0 +1,190 @@
+body {
+	/*font: DM Sans;*/
+}
+
+h3 {
+	margin-top: 30px;
+}
+
+label {
+	cursor: pointer;
+}
+
+.full-line {
+	width: 100%;
+}
+
+.margin-below {
+	margin-bottom: 15px;
+}
+
+.customRow {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.name-row input {
+	width: 100%;
+}
+
+.first-name {
+	width: 40%;
+	margin-right: 2%;
+	max-width: 200px;
+}
+
+.middle-name {
+	width: 15%;
+	margin-right: 2%;
+	max-width: 250px;
+}
+
+.last-name {
+	width: 41%;
+	max-width: 200px;
+}
+
+#ethnicity {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 500px;
+}
+
+.ethnicity-entry {
+	width: 30%;
+/*	cursor: pointer;
+*/}
+
+.ethnicity-entry input {
+	margin-right: 8px;
+}
+
+#experience-level {
+	margin-bottom: 10px;
+}
+
+input[type=radio] {
+	margin-right: 5px;
+}
+
+input[type=radio] span {
+	margin-right: 15px;
+}
+
+.radio-row {
+	font-size: 15px;
+}
+
+.submitRow button {
+	margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+	.ethnicity-entry {
+	}
+}
+
+h3 {
+	margin-top: 10px;
+}
+
+.main {
+	padding-left: 20%;
+}
+
+.required::after {
+	content: "*";
+	color: #ff0000;
+}
+
+.full-line {
+	width: 100%;
+}
+
+.margin-below {
+	margin-bottom: 15px;
+}
+
+.customRow {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.name-row input {
+	width: 100%;
+}
+
+.first-name {
+	width: 37%;
+	margin-right: 2%;
+	max-width: 200px;
+}
+
+.middle-name {
+	width: 22%;
+	margin-right: 2%;
+	max-width: 250px;
+}
+
+.last-name {
+	width: 37%;
+	max-width: 200px;
+}
+
+#ethnicity {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 500px;
+}
+
+.ethnicity-entry {
+	width: 100%;
+}
+
+.ethnicity-entry input {
+	margin-right: 8px;
+}
+
+#experience-level {
+	margin-bottom: 10px;
+}
+
+.radio-row {
+	font-size: 15px;
+}
+
+.submitRow button {
+	margin-left: 15px;
+}
+
+textarea {
+	width: 100%;
+	max-width: 500px;
+}
+
+@media (max-width: 768px) {
+	.first-name {
+		width: 60%;
+		margin-right: 5%;
+	}
+
+	.middle-name {
+		width: 35%;
+		margin-right: 0;
+	}
+
+	.last-name {
+		width: 100%;
+		margin: 0;
+	}
+
+	.preferred-name {
+		width: 100%;
+	}
+
+	.preferred-name input[type=text]{
+		width: 100%;
+	}
+}

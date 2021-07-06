@@ -1,0 +1,34 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+    size: 40px;
+}
+
+h2 {
+    size: 32px;
+}
+
+#checklist {
+    border: black 1px solid;
+    border-radius: 10px;
+    width: 430px;
+    padding: 16px;
+}
+
+#navbar {
+    color: grey;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+#popup {
+    padding: 20px;
+}
+
+.main {
+    margin-left: 300px;
+}

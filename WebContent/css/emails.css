@@ -1,0 +1,29 @@
+.email-types-list {
+    padding-bottom: 5px;
+}
+
+.subject-text-area {
+    resize: none;
+    width: 100%;
+}
+
+.content-text-area {
+    width: 100%;
+}
+
+.save-email-button {
+    padding-right:40px;
+    text-indent:28px;
+}
+
+.show-all-emails-button {
+    padding-bottom: 5px;
+}
+
+.email-page-container {
+    padding-left: 50px;
+}
+
+.reset-email-button {
+    margin-left:15px;
+}

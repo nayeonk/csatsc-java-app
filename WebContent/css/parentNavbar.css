@@ -1,0 +1,166 @@
+.sidebar {
+    color: #fafafa;
+    display: inline-block;
+    width: 200px;
+
+    padding: 36px;
+    background-color: #960e0e;
+    font-family: 'DM Sans';
+
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 94px;
+}
+
+.sidebar-space {
+    width: 200px;
+    padding: 36px;
+    overflow-x: hidden;
+    flex: 0 0 200px;
+}
+
+.sidebar .row a {
+    text-decoration: none;
+    color: #fafafa;
+    line-height: 1.2;
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar .row a:hover {
+    opacity: 0.8;
+}
+
+.adminRow a {
+    opacity: 1 !important;
+}
+
+.row a {
+    opacity: 0.5;
+}
+
+.sidebar #user {
+    color: #fafafa;
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 1;
+}
+
+
+.selected a {
+    opacity: 1;
+}
+
+.selected {
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+}
+
+.selected a:hover {
+    opacity: 1;
+}
+
+.back-arrow a {
+    padding: 0;
+}
+
+.material-icons.md-48 {
+    font-size: 40px;
+}
+
+.material-icons.md-24 {
+    font-size: 30px;
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.hamburger-icon {
+    color: #fafafa;
+}
+
+.desktop-nav-container {
+    height: 100%;
+    padding-top: 50px;
+}
+
+.desktop-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#logout {
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        position: static;
+    }
+
+    .sidebar a {
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .sidebar a:hover {
+        opacity: 1;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 100px;
+    }
+
+    .navbar-header {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 10px;
+    }
+
+    .selected {
+        border: none;
+        text-decoration: underline;
+    }
+
+    .sidebar .row {
+        padding-left: 25px;
+    }
+
+    .sidebar .row a {
+        font-size: 20px;
+        opacity: 1;
+    }
+    .mobile-logo {
+        width: 40%;
+    }
+    .mobile-logo img {
+        width: 100%;
+    }
+}

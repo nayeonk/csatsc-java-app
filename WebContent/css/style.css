@@ -1,0 +1,12 @@
+.clear {
+    clear: both;
+}
+
+a:link, a:visited {
+    color: #900;
+    text-decoration: none;
+}
+
+.check-in-time {
+    background-color: #a9ffa9;
+}

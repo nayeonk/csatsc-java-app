@@ -1,0 +1,18 @@
+.filter-header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-header-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-button-container {
+    padding-top: 22px;
+    text-align: center;
+}
+
+.filter-button {
+    width: 80%;
+}

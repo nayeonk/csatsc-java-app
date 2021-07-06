@@ -1,0 +1,156 @@
+.sidebar {
+    color: black;
+    display: inline-block;
+    width: 200px;
+
+    padding: 36px;
+    background-color: #F1B824;
+    font-family: 'DM Sans';
+
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    margin-top: 94px;
+}
+
+.sidebar-space {
+    width: 200px;
+    padding: 36px;
+    overflow-x: hidden;
+    flex: 0 0 200px;
+}
+
+.sidebar .row a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.2;
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar #user {
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.adminRow a {
+    opacity: 1 !important;
+}
+
+.selected {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.selected a {
+}
+
+.back-arrow a {
+    padding: 0;
+}
+
+.material-icons.md-48 {
+    font-size: 40px;
+}
+
+.material-icons.md-24 {
+    font-size: 30px;
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.hamburger-icon {
+    color: black;
+}
+
+.sidebar .greyed a {
+    color: gray;
+    pointer-events: none;
+    cursor: default;
+}
+
+.desktop-nav-container {
+    height: 100%;
+    /*padding-top: 50px;*/
+}
+
+.desktop-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#logout {
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: auto;
+        position: static;
+    }
+
+    .sidebar a {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 100px;
+    }
+
+    .navbar-header {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        border-top: 2px solid black;
+        padding-top: 10px;
+    }
+
+    .selected {
+        border: none;
+        text-decoration: underline;
+    }
+
+    .row {
+        padding-left: 25px;
+    }
+
+    .row a {
+        font-size: 20px;
+    }
+
+    .mobile-logo {
+        width: 40%;
+    }
+    .mobile-logo img {
+        width: 100%;
+    }
+
+}

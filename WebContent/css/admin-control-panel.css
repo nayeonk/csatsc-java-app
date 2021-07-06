@@ -1,0 +1,62 @@
+.admin-control-panel-body {
+	padding-left: 50px;
+	padding-right: 50px;
+	
+	
+}
+.select{
+	min-width:100px;
+	min-height:10px;
+	border-width: 1px;
+	border-color: grey;
+	font-size:18px;
+	margin: 15px 5px 0px;
+	
+}
+
+
+.panel-group {
+	padding-bottom: 10px;
+}
+
+.add-link {
+	padding-right: 20px;
+}
+
+.link-container {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.back-button-container {
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 50px;	
+}
+.all-emails {
+	padding-left: 50px;	
+}
+
+.wide-col {
+	min-width: 200px;
+}
+
+.table th {
+	white-space: nowrap;
+}
+
+.logout-link {
+	float:right;
+}
+
+.email-list-button{
+	text-align:center;
+}
+
+.email-button{
+	position: absolute;
+    top: 50%;
+}
+
+

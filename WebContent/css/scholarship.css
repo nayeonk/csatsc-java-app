@@ -1,0 +1,34 @@
+label {
+	padding: 2px;
+	margin: 0;
+}
+.margin-below {
+	margin-bottom: 20px;
+}
+
+.full-line {
+	width: 100%;
+}
+
+#skip-box {
+	background: rgba(196, 196, 196, 0.6);
+	border-radius: 10px;
+	text-align: center;
+	padding: 30px;
+	padding-left: 30px;
+}
+#skip {
+	margin: 5px;
+}
+.bold {
+	font-weight: bold;
+}
+
+.question-item {
+	margin-bottom: 20px;
+}
+
+.customRow {
+	display: flex;
+	flex-wrap: wrap;
+}
