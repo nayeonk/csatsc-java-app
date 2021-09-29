@@ -138,7 +138,7 @@ public class CampRegistration extends HttpServlet {
         }
 
         contentsFinal.append("<p style=\"font-size: 18px;\">");
-        contentsFinal.append("Once all applications have been processed, you will receive another email with the status of your application soon. You can also check your status by <a href=\"http://summercamp.usc.edu:8080/SummerCamp/register.jsp\">logging in to your account</a>.");
+        contentsFinal.append("Once all applications have been processed, you will receive another email with the status of your application soon. You can also check your status by <a href=\"https://summercamp.usc.edu/SummerCamp/register.jsp\">logging in to your account</a>.");
         contentsFinal.append("</p>");
 
         String subject = DatabaseQueries.getEmailSubject(EmailType.REGISTERED);

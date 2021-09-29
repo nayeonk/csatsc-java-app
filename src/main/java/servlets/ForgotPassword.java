@@ -50,17 +50,17 @@ public class ForgotPassword extends HttpServlet {
             String content = "";
 
             if (EnvironmentConstants.isProductionEnvironment()) {
-                content = "<h1 align=\"center\" style=\"font-weight: 200; font-size: 32px;\">Password Reset</h1><p style=\"font-size: 20px;\">We received a request to reset the password for the CS@SC Summer Camps registration account associated with this email address. If you made this request, please follow the instructions below.<br><br><a href=\"http://summercamp.usc.edu/SummerCamp/resetpassword?"
+                content = "<h1 align=\"center\" style=\"font-weight: 200; font-size: 32px;\">Password Reset</h1><p style=\"font-size: 20px;\">We received a request to reset the password for the CS@SC Summer Camps registration account associated with this email address. If you made this request, please follow the instructions below.<br><br><a href=\"https://summercamp.usc.edu/SummerCamp/resetpassword?"
                         + token
-                        + "\">Click here</a> to reset your password or copy and paste this link into the address bar of your browser:<br>http://summercamp.usc.edu/SummerCamp/resetpassword?"
+                        + "\">Click here</a> to reset your password or copy and paste this link into the address bar of your browser:<br>https://summercamp.usc.edu/SummerCamp/resetpassword?"
                         + token
-                        + "</p><p style=\"font-size: 16px;\">Please note: For security purposes this link will expire within 30 minutes. Please update your password within 30 minutes of requesting the password update. If the link has already expired, please request an update to your password again here: <a href=\"http://localhost:8080/SummerCamp/forgotpassword\">Request a password update</a></p>";
+                        + "</p><p style=\"font-size: 16px;\">Please note: For security purposes this link will expire within 30 minutes. Please update your password within 30 minutes of requesting the password update. If the link has already expired, please request an update to your password again here: <a href=\"https://summercamp.usc.edu/SummerCamp/forgotpassword\">Request a password update</a></p>";
             } else {
-                content = "<h1 align=\"center\" style=\"font-weight: 200; font-size: 32px;\">Password Reset</h1><p style=\"font-size: 20px;\">We received a request to reset the password for the CS@SC Summer Camps registration account associated with this email address. If you made this request, please follow the instructions below.<br><br><a href=\"http://localhost:8080/SummerCamp/resetpassword?"
+                content = "<h1 align=\"center\" style=\"font-weight: 200; font-size: 32px;\">Password Reset</h1><p style=\"font-size: 20px;\">We received a request to reset the password for the CS@SC Summer Camps registration account associated with this email address. If you made this request, please follow the instructions below.<br><br><a href=\"https://summercamp.usc.edu/SummerCamp/resetpassword?"
                         + token
-                        + "\">Click here</a> to reset your password or copy and paste this link into the address bar of your browser:<br>http://localhost:8080/SummerCamp/resetpassword?"
+                        + "\">Click here</a> to reset your password or copy and paste this link into the address bar of your browser:<br>https://summercamp.usc.edu/SummerCamp/resetpassword?"
                         + token
-                        + "</p><p style=\"font-size: 16px;\">Please note: For security purposes this link will expire within 30 minutes. Please update your password within 30 minutes of requesting the password update. If the link has already expired, please request an update to your password again here: <a href=\"http://localhost:8080/SummerCamp/forgotpassword\">Request a password update</a></p>";
+                        + "</p><p style=\"font-size: 16px;\">Please note: For security purposes this link will expire within 30 minutes. Please update your password within 30 minutes of requesting the password update. If the link has already expired, please request an update to your password again here: <a href=\"https://summercamp.usc.edu/SummerCamp/forgotpassword\">Request a password update</a></p>";
             }
             MailServer.sendEmail(userEmail, subject, content, getServletContext());
             response.getWriter().write("");
