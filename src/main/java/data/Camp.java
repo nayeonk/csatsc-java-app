@@ -252,7 +252,8 @@ public class Camp implements java.io.Serializable {
     }
 
     public void setCampDays(String campDays) {
-        this.campDays = campDays;
+        this.campDays = campDays.replaceAll("H", "Th");
+        // this.campDays = campDays;
     }
 
     public String getCampEndWeek() {

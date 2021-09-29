@@ -107,7 +107,7 @@ public class AddCamp extends HttpServlet {
                 campDays += "W ";
             }
             if (request.getParameter("dayH") != null) {
-                campDays += "H ";
+                campDays += "Th ";
             }
             if (request.getParameter("dayF") != null) {
                 campDays += "F ";

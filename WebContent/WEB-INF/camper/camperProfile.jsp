@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="customRow">
-                    <input type="date" id="birthdate" name="birthdate" value="${student.dob}"/>
+                    <input type="date" id="birthdate" name="birthdate" placeholder="yyyy-mm-dd" value="${student.dob}"/>
                 </div>
             </div>
 
