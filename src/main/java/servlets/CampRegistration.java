@@ -19,8 +19,32 @@ import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
-import java.util.ArrayList;
-import java.util.List;
+import java.lang.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+//camp comparator
+class SortCamp implements Comparator<Camp>{
+    public int compare(Camp a, Camp b){
+        //compare levels if they are not equal
+        if(a.getCampLevel().compareTo(b.getCampLevel()) != 0)
+            return a.getCampLevel().compareTo(b.getCampLevel());
+        else{
+            //if levels are equal, compare start dates
+            if(a.getCampStartDate().compareTo(b.getCampStartDate()) != 0)
+                return a.getCampStartDate().compareTo(b.getCampStartDate());
+            else{
+                //if start dates are equal, compare days
+                if(a.getCampDays().compareTo(b.getCampDays()) != 0)
+                    return a.getCampDays().compareTo(b.getCampDays());
+                else{
+                    //if days are equal, compare time and return anyways
+                        return a.getCampTime().compareTo(b.getCampTime());
+                }
+            }
+        }
+    }
+}
 
 public class CampRegistration extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -120,6 +144,11 @@ public class CampRegistration extends HttpServlet {
             }
             allEligibleCamps.add(eligibleCamps);
         }
+
+        //sort camps (by level, day, date, time)
+        for(int i = 0; i < allEligibleCamps.size(); i++)
+            Collections.sort(allEligibleCamps.get(i), new SortCamp());
+
         return allEligibleCamps;
     }
 
