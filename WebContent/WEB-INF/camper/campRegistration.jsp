@@ -282,6 +282,8 @@
 
                                     <div class="class-entry-description">
                                         <h7 class="small-header">Price</h7>
+                                            <%-- <span><c:choose><c:when
+                                                            test="${parent.uscEmployee}">${parseInt(camp.price) - 25}</c:when><c:otherwise>${camp.price}</c:otherwise></c:choose></span> --%>
                                         <span>${camp.price}</span>
                                     </div>
                                 </div>

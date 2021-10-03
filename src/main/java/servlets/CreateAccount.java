@@ -32,6 +32,7 @@ public class CreateAccount extends HttpServlet {
         String email2 = request.getParameter("email2");
         String password = request.getParameter("password");
         String password2 = request.getParameter("password2");
+        String uscemployee = request.getParameter("uscemployee");
 
         String errorMessage = "";
 
@@ -139,6 +140,12 @@ public class CreateAccount extends HttpServlet {
         builder.name("", "");
         builder.phone("");
         builder.address(new Address("", "", "", 0, ""));
+
+        //TODO: Update database to include a uscemployee field, need to update all insert statements
+        if(uscemployee == null)
+            builder.uscEmployee(false);
+        else
+            builder.uscEmployee(true);
 
         Parent parent = builder.build();
         int parentID = DatabaseInserts.insertParent(parent);

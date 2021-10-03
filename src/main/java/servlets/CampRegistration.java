@@ -75,8 +75,13 @@ public class CampRegistration extends HttpServlet {
         request.setAttribute("campTopics", campTopics);
 
         // get student and set as session attribute for navbar
+        //TODO: Get Parent and set Attribute, inside campRegistration,
+        //      check if usc employee and discount $25 if usc employee in jsp
         Student student = DatabaseQueries.getStudent(studentID, false);
+        int emailID = DatabaseQueries.getEmailIDAssociatedWithStudent(student.getStudentID());
+        Parent parent = DatabaseQueries.getParentByEID(emailID);
         request.getSession().setAttribute("student", student);
+        request.getSession().setAttribute("parent", parent);
         request.getRequestDispatcher("/WEB-INF/camper/campRegistration.jsp").forward(request, response);
 
     }

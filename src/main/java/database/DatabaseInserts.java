@@ -180,6 +180,8 @@ public class DatabaseInserts {
         try {
             PreparedStatement ps = DatabaseConnection.parentPS(parent, SQLStatements.insertParentSQL);
             ps.setInt(5, insertAddress(parent.getAddress()));
+            //TODO: Update SQL Database
+            //ps.setBoolean(6, parent.getUSCEmployee());
             parentID = executeInsert(ps);
         }
         catch (SQLException sqle) {

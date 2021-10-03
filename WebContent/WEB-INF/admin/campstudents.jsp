@@ -328,6 +328,8 @@
                                                         test="${student.transportFrom}">Yes</c:when><c:otherwise>No</c:otherwise></c:choose></td>
                                                 <td>${student.experience}</td>
                                                 <td class="wide-col">
+                                                    <%-- <c:choose><c:when
+                                                        test="${parent.uscEmployee}">Yes</c:when><c:otherwise>No</c:otherwise></c:choose> --%>
                                                     <c:if test="${fn:contains(parent.email, 'usc.edu')}">Yes</c:if>
                                                 </td>
                                                     <%--

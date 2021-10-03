@@ -223,8 +223,7 @@
                     </tr>
                 </table>
                 <br/>
-                <p>This action cannot be undone. Please allow 2-5 business days for refund to appear on your
-                    account.</p>
+                <p>This action cannot be undone. If you have paid for this camp, please allow 2-5 business days for refund to appear on your account.</p>
             </div>
             <div class="modal-footer">
                 <form action="${pageContext.request.contextPath}/mycamps" method="POST">
