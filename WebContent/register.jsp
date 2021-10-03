@@ -81,6 +81,10 @@
                                         <label for="password2"><span>Reenter Password <span
                                                 class="required">*</span></span>
                                             <input type="password" class="input-field" name="password2"></label>
+
+                                        <label for="uscemployee"><span>
+                                            <input type="checkbox" name="uscemployee" value="USC Employee"> I am an employee of USC. </span></label>
+
                                         <label><span>&nbsp;</span><input class="form-control" type="submit"
                                                                          value="Sign Up"/></label>
                                         <div><i>Special consideration given for our USC family members so if you are an

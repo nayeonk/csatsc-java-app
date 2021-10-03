@@ -14,6 +14,7 @@ public class Parent implements java.io.Serializable {
     private String phone;
     private Address address;
     private String income;
+    private boolean uscEmployee;
     private int incomeID = -1;
 
     private Parent(ParentBuilder builder) {
@@ -54,7 +55,7 @@ public class Parent implements java.io.Serializable {
         if (builder.incomeID != -1) {
             this.incomeID = builder.incomeID;
         }
-
+        this.uscEmployee = builder.uscEmployee;
     }
 
     public int getParentID() {
@@ -109,6 +110,7 @@ public class Parent implements java.io.Serializable {
         return this.income;
     }
 
+    public Boolean getUSCEmployee() { return this.uscEmployee; }
 
     public String getEmail() {
         return email;
@@ -130,6 +132,7 @@ public class Parent implements java.io.Serializable {
         private String phone;
         private Address address;
         private String income;
+        private boolean uscEmployee;
         private int incomeID = -1;
 
         public ParentBuilder parentID(int parentID) {
@@ -175,6 +178,11 @@ public class Parent implements java.io.Serializable {
 
         public ParentBuilder income(String income) {
             this.income = income;
+            return this;
+        }
+
+        public ParentBuilder uscEmployee(boolean uscEmployee){
+            this.uscEmployee = uscEmployee;
             return this;
         }
 
