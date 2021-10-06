@@ -20,6 +20,7 @@ public class Camp implements java.io.Serializable {
     private int priceValue;
     private int selected;
     private String price;
+    private String employeePrice;
     private Boolean remote;
     private String remoteString;
     private String campName;
@@ -94,8 +95,10 @@ public class Camp implements java.io.Serializable {
         setPriceValue(offered.getPrice());
 
         double convertedPrice = offered.getPrice() / 100.0;
+        double convertedEmployeePrice = convertedPrice - 25.0;
 
         String campPrice;
+        String campEmployeePrice;
 
         if (convertedPrice == 0) {
             campPrice = "Free";
@@ -117,7 +120,27 @@ public class Camp implements java.io.Serializable {
             }
         }
 
-        setPrice(campPrice);
+        if (convertedEmployeePrice <= 0) {
+            campEmployeePrice = "Free";
+        } else {
+            campEmployeePrice = "$";
+            campEmployeePrice += Double.toString(convertedEmployeePrice);
+            if (campEmployeePrice.endsWith(".0")
+                    || campEmployeePrice.endsWith(".1")
+                    || campEmployeePrice.endsWith(".2")
+                    || campEmployeePrice.endsWith(".3")
+                    || campEmployeePrice.endsWith(".4")
+                    || campEmployeePrice.endsWith(".5")
+                    || campEmployeePrice.endsWith(".6")
+                    || campEmployeePrice.endsWith(".7")
+                    || campEmployeePrice.endsWith(".8")
+                    || campEmployeePrice.endsWith(".9")
+            ) {
+                campEmployeePrice += "0";
+            }
+        }
+
+        setEmployeePrice(campEmployeePrice);
 
         // TODO: FIX THIS ONCE THE DATABASE HAS COLUMNS PROPERLY ADDED
         setCampDescription(offered.getDescription());
@@ -343,6 +366,10 @@ public class Camp implements java.io.Serializable {
     public void setPrice(String price) {
         this.price = price;
     }
+
+    public String getEmployeePrice() { return employeePrice; }
+
+    public void setEmployeePrice(String employeePrice) { this.employeePrice = employeePrice; }
 
     public Boolean getRemote() {
         return remote;

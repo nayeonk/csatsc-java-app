@@ -141,11 +141,11 @@ public class CreateAccount extends HttpServlet {
         builder.phone("");
         builder.address(new Address("", "", "", 0, ""));
 
-        //TODO: Update database to include a uscemployee field, need to update all insert statements
         if(uscemployee == null)
             builder.uscEmployee(false);
-        else
+        else {
             builder.uscEmployee(true);
+        }
 
         Parent parent = builder.build();
         int parentID = DatabaseInserts.insertParent(parent);
