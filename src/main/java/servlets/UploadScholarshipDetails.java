@@ -1,4 +1,3 @@
-
 package servlets;
 
 import data.Student;
@@ -18,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @MultipartConfig
-@WebServlet(name = "AddScholarshipDetails")
-public class ApplyForScholarship extends HttpServlet {
+@WebServlet(name = "ApplyForScholarship")
+public class UploadScholarshipDetails extends HttpServlet {
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Reinforce parent access authorization
@@ -48,7 +47,13 @@ public class ApplyForScholarship extends HttpServlet {
                 this.skipForm(request, response);
             }
             else { // Clicked "Save & Continue" on scholarship application
-                this.submitForm(request, response);
+                // Fails form validation, so return to same page and preserve changes the user made
+                if (!ValidateFormUtil.validateScholarship(request)) {
+                    this.populatePage(request, response);
+                }
+                else { // Good submission, so save to database
+                    this.submitForm(request, response);
+                }
             }
         }
     }
@@ -61,8 +66,27 @@ public class ApplyForScholarship extends HttpServlet {
         Student student = DatabaseQueries.getStudent(studentID, true);
         request.getSession().setAttribute("student", student);
 
+        if (request.getAttribute("errorMessage") == null) {
+            // Set student and reducedMealsID as attributes if scholarship already filled
+            request.setAttribute("student", student);
+            request.setAttribute("reducedMealsID", student.getReducedMealsID());
+
+            if (student.getGradeReports() != null) {
+                request.getSession().setAttribute("gradeReports", student.getGradeReports());
+            }
+            if (student.getReducedMealsVerifications() != null) {
+                request.getSession().setAttribute("reducedMealsVerifications", student.getReducedMealsVerifications());
+            }
+        }
+        else {
+            String reducedMeals = request.getParameter("reducedMeals");
+            if (reducedMeals != null) {
+                request.setAttribute("reducedMealsID", Integer.parseInt(reducedMeals));
+            }
+        }
+
         request = SetPageAttributeUtil.setControlPanelAttributes(request);
-        request.getRequestDispatcher("/WEB-INF/camper/scholarshipConfirm.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/camper/scholarship.jsp").forward(request, response);
     }
 
     // used when skipping scholarship application
@@ -81,6 +105,32 @@ public class ApplyForScholarship extends HttpServlet {
 
     // used when trying to save scholarship application
     protected void submitForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.sendRedirect("/SummerCamp/addscholarshipdetails");
+        int studentID = (int) request.getSession().getAttribute("studentID");
+
+        if (ModifyDataUtil.uploadScholarshipFiles(request, studentID).length() > 0) { // error in uploading file
+            response.sendRedirect("/SummerCamp/applyforscholarship");
+        }
+        else {
+            ModifyDataUtil.createReducedMeals(request, studentID);
+
+            // update student's progress
+            Student student = DatabaseQueries.getStudent(studentID, false);
+            if (student.getProgress() == 0) {
+//                DatabaseUpdates.updateStudentProgress(studentID, 1);
+
+//                Hotfix notes
+//                Setting to 1 would set step to "complete medical"
+//                So automatically set to 2 to allow for apply to camp
+
+                DatabaseUpdates.updateStudentProgress(studentID, 2);
+            }
+
+            request.getSession().removeAttribute("gradeReports");
+            request.getSession().removeAttribute("reducedMealsVerifications");
+
+//        response.sendRedirect("/SummerCamp/medical");
+            response.sendRedirect("/SummerCamp/campregistration");
+        }
     }
 }
+

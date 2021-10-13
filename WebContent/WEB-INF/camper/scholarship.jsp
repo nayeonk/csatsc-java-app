@@ -32,7 +32,7 @@
 
 			<!-- Main page content -->
 			<div id="main">
-				<form name="scholarship" method="POST" action="${pageContext.request.contextPath}/applyforscholarship" enctype="multipart/form-data">
+				<form name="scholarship" method="POST" action="${pageContext.request.contextPath}/addscholarshipdetails" enctype="multipart/form-data">
 					<!-- Title -->
 					<h1>Scholarship Application (Optional)</h1>
 
