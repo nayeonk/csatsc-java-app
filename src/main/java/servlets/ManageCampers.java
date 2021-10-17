@@ -40,6 +40,8 @@ public class ManageCampers extends HttpServlet {
             int studentID = Integer.parseInt(request.getParameter("studentID"));
             request = SetPageAttributeUtil.setCamperAttributes(request, studentID);
             request.getSession().setAttribute("isUpdate", "yes");
+            //request.getSession().setAttribute("OnCampus", "yes");
+
             request.getRequestDispatcher("/mycamps").forward(request, response);
         } else {
             // add new camper

@@ -35,6 +35,7 @@ public class Student implements java.io.Serializable {
     private Boolean attended;
     private Boolean legalAgree;
     private Boolean interestedGirlsCamp;
+    private Boolean OnCampus;
     private String otherInfo;
     private List<GradeReport> gradeReports;
     private List<ReducedMealsVerification> reducedMealsVerifications;
@@ -122,7 +123,7 @@ public class Student implements java.io.Serializable {
         this.pickupCode = builder.pickupCode;
         this.lastUpdatedYear = builder.lastUpdatedYear;
         this.progress = builder.progress;
-
+        this.OnCampus = builder.OnCampus;
 
         if (gender != null) {
             this.genderID = gender.getGenderID();
@@ -390,9 +391,14 @@ public class Student implements java.io.Serializable {
         this.progress = progress;
     }
 
+    public Boolean getOnCampus() { return OnCampus; }
+
+    public void setOnCampus(Boolean OnCampus) { this.OnCampus = OnCampus; }
+
     public static class StudentBuilder {
 
         // Initial completion of camper profile
+        private Boolean OnCampus;
         private String firstName;
         private String middleName;
         private String lastName;
@@ -429,6 +435,11 @@ public class Student implements java.io.Serializable {
             this.middleName = middleName;
             this.lastName = lastName;
             this.preferredName = preferredName;
+            return this;
+        }
+
+        public StudentBuilder OnCampus(Boolean OnCampus) {
+            this.OnCampus = OnCampus;
             return this;
         }
 
@@ -548,6 +559,8 @@ public class Student implements java.io.Serializable {
         public int getStudentID() {
             return studentID;
         }
+
+        public Boolean getOnCampus() { return OnCampus; }
 
         public void setStudentID(int studentID) {
             this.studentID = studentID;
