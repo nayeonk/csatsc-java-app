@@ -87,6 +87,14 @@
         <url-pattern>/applyforscholarship</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>addscholarshipdetails</servlet-name>
+        <servlet-class>servlets.UploadScholarshipDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addscholarshipdetails</servlet-name>
+        <url-pattern>/addscholarshipdetails</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>admincontrolpanel</servlet-name>
         <servlet-class>servlets.AdminControlPanel</servlet-class>
     </servlet>
