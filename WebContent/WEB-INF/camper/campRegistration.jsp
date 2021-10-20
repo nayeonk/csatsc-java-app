@@ -231,7 +231,9 @@
                                     <h7 class="days">${camp.getCampDays()}</h7>
                                     <h7 class="time">${camp.campTime}</h7>
                                     <h7 class="capacity ${camp.getFull() ? "text-danger" : ""}"> ${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</h7>
-                                    <h7 class="cost">${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</h7>
+                                    <h7 class="cost">
+                                        <c:choose><c:when test="${parent.getUSCEmployee()}"><s>${camp.price}</s> ${camp.employeePrice}</c:when><c:otherwise>${camp.price}</c:otherwise></c:choose>
+                                    </h7>
                                 </div>
                             </c:forEach>
                         </div>
@@ -282,7 +284,7 @@
 
                                     <div class="class-entry-description">
                                         <h7 class="small-header">Price</h7>
-                                        <span>${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</span>
+                                        <span><c:choose><c:when test="${parent.getUSCEmployee()}"><s>${camp.price}</s> ${camp.employeePrice}</c:when><c:otherwise>${camp.price}</c:otherwise></c:choose></span>
                                     </div>
                                 </div>
                             </c:forEach>

@@ -241,9 +241,8 @@ public class SQLStatements {
             + "INNER JOIN Ethnicity ON Ethnicity.ethnicityID = StudentEthnicity.ethnicityID "
             + "WHERE StudentEthnicity.studentID=? and valid=1";
 
-    //TODO: change to (fname, lname, phone, emailID, addressID, uscemployee), VALUES (?, ?, ?, ?, ?, ?)
-    static final String insertParentSQL = "INSERT INTO Parent (fname, lname, phone, emailID, addressID, uscemployee) "
-            + "VALUES (?, ?, ?, ?, ?, ?)";
+    static final String insertParentSQL = "INSERT INTO Parent (fname, lname, phone, emailID, addressID, uscemployee, uscID) "
+            + "VALUES (?, ?, ?, ?, ?, ?, ?)";
     static final String insertAddressSQL = "INSERT INTO Address (street, country, city, stateID, zip) "
             + "VALUES (?, ?, ?, ?, ?)";
     static final String insertParentIncomeSQL = "INSERT INTO ParentIncome (incomeID, parentID, timestamp) "

@@ -7,10 +7,13 @@ function validatePFormFields(form){
 	if(form.lname.value.trim() === ""){
 		errormessage += "Please enter your last name<br>";
 	}
-	
+
+	var phoneFormat = new RegExp(/^[\+1]*[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im);
 	if(form.phone.value.trim() === ""){
 		errormessage += "Please enter your phone number<br>";
 	} else if (isNaN(form.phone.value.trim())) {
+		errormessage += "Please enter a valid phone number<br>";
+	} else if (!phoneFormat.test(form.phone.value.trim())) {
 		errormessage += "Please enter a valid phone number<br>";
 	}
 

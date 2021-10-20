@@ -181,6 +181,7 @@ public class DatabaseInserts {
             PreparedStatement ps = DatabaseConnection.parentPS(parent, SQLStatements.insertParentSQL);
             ps.setInt(5, insertAddress(parent.getAddress()));
             ps.setBoolean(6, parent.getUSCEmployee());
+            ps.setString(7, parent.getUSCID());
             parentID = executeInsert(ps);
         }
         catch (SQLException sqle) {

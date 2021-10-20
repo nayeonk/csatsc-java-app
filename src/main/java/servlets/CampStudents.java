@@ -47,6 +47,7 @@ public class CampStudents extends HttpServlet {
                     campPrice = new StringBuilder(campPrice).insert(campPrice.length() - 2, ".").append(" Paid Camp").toString();
                 }
                 request.getSession().setAttribute("campPriceAsInt", campOffered.getPrice() / 100.0);
+                request.getSession().setAttribute("eCampPriceAsInt", campOffered.getEmployeePrice() / 100.0 );
 
                 List<Camp> campList = new ArrayList<Camp>();
                 List<CampTopic> campTopicList = DatabaseQueries.getCampTopics();

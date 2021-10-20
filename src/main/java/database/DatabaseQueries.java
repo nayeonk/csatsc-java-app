@@ -281,6 +281,7 @@ public class DatabaseQueries {
                 builder.addressID(rs.getInt("addressID"));
                 builder.address(address);
                 builder.uscEmployee(rs.getBoolean("uscemployee"));
+                builder.uscID(rs.getString("uscID"));
             }
 
         } catch (SQLException sqle) {

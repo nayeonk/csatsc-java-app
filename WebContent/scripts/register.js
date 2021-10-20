@@ -91,7 +91,10 @@ function continueValidation(form, unique){
 		if (pass !== pass2){
 			errormessage += "Passwords do not match <br>";
 		}
-		
+
+		if(form.uscemployee.checked && form.uscid.value === ""){
+			errormessage += "Please enter your USC Student/Employee ID<br>";
+		}
 	}
 	
 	if(errormessage !== ""){
@@ -105,4 +108,14 @@ function continueValidation(form, unique){
 		return true;
 	}
 	
+}
+
+function showIDEntry(checkbox){
+	if(checkbox.checked){
+		document.getElementById("uscidspan").style.display = "initial";
+		document.getElementById("uscid").style.display = "initial";
+	} else {
+		document.getElementById("uscidspan").style.display = "none";
+		document.getElementById("uscid").style.display = "none";
+	}
 }

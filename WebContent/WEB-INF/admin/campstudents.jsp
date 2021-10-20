@@ -330,7 +330,13 @@
                                                 <td class="wide-col">
                                                     <%-- <c:choose><c:when
                                                         test="${parent.uscEmployee}">Yes</c:when><c:otherwise>No</c:otherwise></c:choose> --%>
+                                                    <c:choose>
+                                                        <c:when test="${fn:contains(parent.email, 'usc.edu')}">Yes</c:when>
+                                                        <c:when test="${parent.getUSCEmployee()}">Yes</c:when>
+                                                        <c:otherwise>No</c:otherwise>
+                                                    </c:choose>
                                                     <c:if test="${fn:contains(parent.email, 'usc.edu')}">Yes</c:if>
+
                                                 </td>
                                                     <%--
                                                         STATUS CHANGE OPTIONS
@@ -412,9 +418,18 @@
                                                         <c:if test="${campStatus != 'accepted'}">
                                                             <div id="${campStatus}-payment-${studentID}"
                                                                  style="display:none;">
-                                                                <fmt:formatNumber value="${campPriceAsInt}"
-                                                                                  minFractionDigits="2"
-                                                                                  var="formattedPrice"/>
+                                                                <c:choose>
+                                                                    <c:when test="${parent.getUSCEmployee()}">
+                                                                        <fmt:formatNumber value="${eCampPriceAsInt}"
+                                                                                          minFractionDigits="2"
+                                                                                          var="formattedPrice"/>
+                                                                    </c:when>
+                                                                    <c:otherwise>
+                                                                        <fmt:formatNumber value="${campPriceAsInt}"
+                                                                                          minFractionDigits="2"
+                                                                                          var="formattedPrice"/>
+                                                                    </c:otherwise>
+                                                                </c:choose>
                                                                 <script> console.log("student not accepted")</script>
                                                                 <br/>
                                                                 Payment Amount: <input type="number" step="0.01"

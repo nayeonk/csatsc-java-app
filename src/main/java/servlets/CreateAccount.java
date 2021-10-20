@@ -33,6 +33,7 @@ public class CreateAccount extends HttpServlet {
         String password = request.getParameter("password");
         String password2 = request.getParameter("password2");
         String uscemployee = request.getParameter("uscemployee");
+        String uscID = request.getParameter("uscid");
 
         String errorMessage = "";
 
@@ -141,10 +142,13 @@ public class CreateAccount extends HttpServlet {
         builder.phone("");
         builder.address(new Address("", "", "", 0, ""));
 
-        if(uscemployee == null)
+        if(uscemployee == null) {
             builder.uscEmployee(false);
+            builder.uscID(null);
+        }
         else {
             builder.uscEmployee(true);
+            builder.uscID(uscID);
         }
 
         Parent parent = builder.build();

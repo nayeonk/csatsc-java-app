@@ -250,6 +250,8 @@ public class CampOffered implements java.io.Serializable {
         return price;
     }
 
+    public int getEmployeePrice() { return price - 2500;}
+
     public void setPrice(int price) {
         this.price = price;
     }

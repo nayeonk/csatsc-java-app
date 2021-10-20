@@ -10,12 +10,16 @@ function validateECFormFields(form){
 	if(form.e_lname.value.trim() === ""){
 		errormessage += "Please enter your last name<br>";
 	}else { atLeastOne = true; }
-	
+
+	var phoneFormat = new RegExp(/^[\+1]*[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im);
 	if(form.e_phone.value.trim() === ""){
 		errormessage += "Please enter your phone number<br>";
 	}else if (isNaN(form.e_phone.value.trim())) {
 		errormessage += "Please enter a valid phone number<br>";
-	}else { atLeastOne = true; }
+	} else if (!phoneFormat.test(form.e_phone.value.trim())){
+		errormessage += "Please enter a valid phone number<br>";
+	}
+	else { atLeastOne = true; }
 
 	if(form.e_country.value === ""){
 		errormessage += "Please enter your country<br>";

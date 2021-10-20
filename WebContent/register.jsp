@@ -83,7 +83,13 @@
                                             <input type="password" class="input-field" name="password2"></label>
 
                                         <label for="uscemployee"><span>
-                                            <input type="checkbox" name="uscemployee" value="USC Employee"> I am an employee of USC. </span></label>
+                                            <input type="checkbox" name="uscemployee" value="USC Employee"
+                                                   onclick="showIDEntry(this)"> I am an employee of USC. </span></label>
+
+                                        <label for="uscid"><span id="uscidspan" style="display: none;">USC Student/Employee ID <span
+                                                class="required">*</span></span>
+                                            <input type="text" class="input-field" name="uscid" id="uscid"
+                                                   style="display: none;"></label>
 
                                         <label><span>&nbsp;</span><input class="form-control" type="submit"
                                                                          value="Sign Up"/></label>

@@ -140,6 +140,7 @@ public class Camp implements java.io.Serializable {
             }
         }
 
+        setPrice(campPrice);
         setEmployeePrice(campEmployeePrice);
 
         // TODO: FIX THIS ONCE THE DATABASE HAS COLUMNS PROPERLY ADDED
