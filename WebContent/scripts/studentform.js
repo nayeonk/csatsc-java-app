@@ -40,6 +40,10 @@ function validateSFormFields(id, form){
 
 		errormessage += "Please select a gender.<br>";
 	}
+	// if (form.OnCampus.value === ""){
+	//
+	// 	errormessage += "Please select if you want onCampus classes.<br>";
+	// }
 	if ((form.transportTo.value === "") || (form.transportFrom.value === "")){
 	
 		errormessage += "Please tell us if your child has transportation.<br>";

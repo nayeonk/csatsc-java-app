@@ -71,6 +71,7 @@ public class ModifyDataUtil {
 
         // Additional Information
         String attended = reqParam(request, "attended");
+        String OnCampus = reqParam(request, "OnCampus");
         String experience = reqParam(request, "experience");
         String diet = reqParam(request, "diet");
         String otherInfo = reqParam(request, "otherInfo");
@@ -88,6 +89,7 @@ public class ModifyDataUtil {
                 .transportTo(transportTo == null ? null : transportTo.equals("yes"))
                 .transportFrom(transportFrom == null ? null : transportFrom.equals("yes"))
                 .attended(attended == null ? null : attended.equals("yes"))
+                .OnCampus(OnCampus == null? null: OnCampus.equals("yes"))
                 .experience(experience)
                 .diet(diet)
                 .otherInfo(otherInfo)

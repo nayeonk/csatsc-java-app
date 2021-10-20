@@ -236,14 +236,14 @@ public class CreateStudent extends HttpServlet {
         if (OnCampus.isEmpty()) {
             error += "Please tell us if your child want to attend camps on campus.<br>";
         }
-        else if(OnCampus == "yes") {
-            if(request.getParameter("Medical") == "no") {
-                error += "Please fill in the medical form if your child want to attend on campus.";
-            }
-        }
-        else {
-            error += OnCampus;
-        }
+//        else if(OnCampus == "yes") {
+//            if(request.getParameter("Medical") == "no") {
+//                error += "Please fill in the medical form if your child want to attend on campus.";
+//            }
+//        }
+//        else {
+//            error += OnCampus;
+//        }
 
         return error;
     }

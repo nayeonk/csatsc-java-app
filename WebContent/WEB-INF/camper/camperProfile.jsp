@@ -44,7 +44,8 @@
                 <br>Your changes will not be saved until you click <i>Save & Continue</i>.
             </p>
             <c:choose>
-                <c:when test="${errorMessage == null ||  errorMessage.isBlank()}">
+<%--            ||  errorMessage.isBlank()--%>
+                <c:when test="${errorMessage == null }">
                     <div class="message-popup" style="display:none;text-align:center;z-index:999999999;">
                 </c:when>
                 <c:otherwise>
@@ -399,8 +400,37 @@
             <!-- OnCampus -->
             <div class="customRow margin-below">
                 <div class="required full-line margin-below">Does this child want to attend the camp in person?</div>
-                <div id="OnCampus-div">
+                <div id="OnCampus">
                     <div class="customRow center-vertical">
+<%--                        <c:choose>--%>
+<%--                            <c:when test="${student.OnCampus}">--%>
+<%--                                <input type="radio" id="OnCampus-yes" class="center-vertical" name="OnCampus"--%>
+<%--                                       value="yes" checked/>--%>
+<%--                                <span for="OnCampus-yes">Yes</span>--%>
+<%--                                &nbsp;--%>
+<%--                                <input type="radio" id="OnCampus-no" class="center-vertical" name="OnCampus"--%>
+<%--                                       value="no"/>--%>
+<%--                                <span for="OnCampus-no">No</span>--%>
+<%--                            </c:when>--%>
+
+<%--                            <c:when test="${student.OnCampus != null && !student.OnCampus}">--%>
+<%--                                <input type="radio" id="OnCampus-yes" class="center-vertical" name="OnCampus"--%>
+<%--                                       value="yes"/>--%>
+<%--                                <span for="OnCampus-yes">Yes</span>--%>
+<%--                                &nbsp;--%>
+<%--                                <input type="radio" id="OnCampus-no" class="center-vertical" name="OnCampus"--%>
+<%--                                       value="no" checked/>--%>
+<%--                                <span for="OnCampus-no">No</span>--%>
+<%--                            </c:when>--%>
+
+<%--                            <c:when test="${student == null}">--%>
+<%--                                <input type="radio" class="center-vertical" name="OnCampus" value="yes"/>--%>
+<%--                                <span for="OnCampus-yes">Yes</span>--%>
+<%--                                &nbsp;--%>
+<%--                                <input type="radio" class="center-vertical" name="OnCampus" value="no"/>--%>
+<%--                                <span for="OnCampus-no">No</span>--%>
+<%--                            </c:when>--%>
+<%--                        </c:choose>--%>
                         <c:choose>
                             <c:when test="${student.getOnCampus() eq true}">
                                 <input type="radio" id="OnCampus-yes" class="center-vertical" name="OnCampus"
@@ -410,21 +440,7 @@
                                 <input type="radio" id="OnCampus-no" class="center-vertical" name="OnCampus"
                                        value="no"/>
                                 <span for="OnCampus-no">No</span>
-                                <%--
-                                <c:choose>
-                                    <c:when test="${student.MedForm == null}">
-                                        <div name="MedicalForm">
-                                           <a href="/SummerCamp/medical">Upload Medical Documents</a>
-                                            <input type="hidden" name="Medical" value="no">
-                                        </div>
-                                    </c:when>
-                                    <c:when test="${student.MedForm != null}">
-                                        <div name="MedicalForm">
-                                            <input type="hidden" name="Medical" value="yes">
-                                        </div>
-                                    </c:when>
-                                </c:choose>
-                                --%>
+
                             </c:when>
 
                             <c:when test="${student.getOnCampus() eq false}">

@@ -391,7 +391,7 @@ public class Student implements java.io.Serializable {
         this.progress = progress;
     }
 
-    public Boolean getOnCampus() { return OnCampus; }
+    public Boolean getOnCampus() { return this.OnCampus; }
 
     public void setOnCampus(Boolean OnCampus) { this.OnCampus = OnCampus; }
 
