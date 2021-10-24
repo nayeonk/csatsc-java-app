@@ -232,7 +232,7 @@ public class CreateStudent extends HttpServlet {
             error += "Please tell us if your child has dietary restrictions or medical issues.<br>";
         }
 
-        String OnCampus = request.getParameter("OnCampus");
+        /*String OnCampus = request.getParameter("OnCampus");
         if (OnCampus.isEmpty()) {
             error += "Please tell us if your child want to attend camps on campus.<br>";
         }
@@ -243,7 +243,7 @@ public class CreateStudent extends HttpServlet {
         }
         else {
             error += OnCampus;
-        }
+        }*/
 
         return error;
     }

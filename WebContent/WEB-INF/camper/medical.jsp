@@ -62,6 +62,60 @@
 						</c:otherwise>
 					</c:choose>
 
+					<!-- OnCampus -->
+					<div class="customRow margin-below">
+						<div class="required full-line margin-below">Does this child want to attend the camp in person?</div>
+						<div id="OnCampus-div">
+							<div class="customRow center-vertical">
+								<c:choose>
+									<c:when test="${OnCampus eq true}">
+										<input type="radio" id="OnCampus-yes" class="center-vertical" name="OnCampus"
+											   value="yes" checked="checked"/>
+										<span for="OnCampus-yes">Yes</span>
+										&nbsp;
+										<input type="radio" id="OnCampus-no" class="center-vertical" name="OnCampus"
+											   value="no"/>
+										<span for="OnCampus-no">No</span>
+										<%--
+                                        <c:choose>
+                                            <c:when test="${student.MedForm == null}">
+                                                <div name="MedicalForm">
+                                                   <a href="/SummerCamp/medical">Upload Medical Documents</a>
+                                                    <input type="hidden" name="Medical" value="no">
+                                                </div>
+                                            </c:when>
+                                            <c:when test="${student.MedForm != null}">
+                                                <div name="MedicalForm">
+                                                    <input type="hidden" name="Medical" value="yes">
+                                                </div>
+                                            </c:when>
+                                        </c:choose>
+                                        --%>
+									</c:when>
+
+									<c:when test="${OnCampus eq false}">
+										<input type="radio" id="OnCampus-yes" class="center-vertical" name="OnCampus"
+											   value="yes"/>
+										<span for="OnCampus-yes">Yes</span>
+										&nbsp;
+										<input type="radio" id="OnCampus-no" class="center-vertical" name="OnCampus"
+											   value="no" checked/>
+										<span for="OnCampus-no">No</span>
+									</c:when>
+
+									<c:otherwise>
+										<input type="radio" class="center-vertical" name="OnCampus" value="yes"/>
+										<span for="OnCampus-yes">Yes</span>
+										&nbsp;
+										<input type="radio" class="center-vertical" name="OnCampus" value="no"/>
+										<span for="OnCampus-no">No</span>
+									</c:otherwise>
+
+								</c:choose>
+							</div>
+						</div>
+					</div>
+
 					<!-- Student Information -->
 					<h3 class="full-line">Student Information</h3>
 
