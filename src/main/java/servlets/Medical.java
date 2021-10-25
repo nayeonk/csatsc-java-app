@@ -367,7 +367,7 @@ public class Medical extends HttpServlet {
         }
 
         request.getSession().removeAttribute("medicalFormID");
-
+        request.getSession().setAttribute("OnCampus", true);
         response.sendRedirect("/SummerCamp/campregistration");
     }
 }

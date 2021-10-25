@@ -218,22 +218,71 @@
                                 <h7 class="cost">Price</h7>
                             </div>
 
-                            <c:forEach items="${eligibleCamp}" var="camp">
-                                <div class="class-entry ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-campID ="${camp.campOfferedID}" data-topic="${camp.campTopic}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
+                            <c:choose>
+                                <c:when test="${OnCampus eq true}">
+                                    <span>You are cleared to register all camps</span>
+                                    <c:forEach items="${eligibleCamp}" var="camp">
+                                        <div class="class-entry ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-campID ="${camp.campOfferedID}" data-topic="${camp.campTopic}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
 										<span class="checkbox-space">
 											<input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
 											<div class="class-checkbox"></div>
 										</span>
-                                    <h7 class="camp-name">${camp.campLevel}</h7>
-                                    <h7 class="recommended-grade">${camp.campGradeFormatted}</h7>
-                                    <h7 class="online">${camp.remoteString}</h7>
-                                    <h7 class="date">${camp.campStartWeek}-${camp.campEndWeek}</h7>
-                                    <h7 class="days">${camp.getCampDays()}</h7>
-                                    <h7 class="time">${camp.campTime}</h7>
-                                    <h7 class="capacity ${camp.getFull() ? "text-danger" : ""}"> ${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</h7>
-                                    <h7 class="cost">${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</h7>
-                                </div>
-                            </c:forEach>
+                                            <h7 class="camp-name">${camp.campLevel}</h7>
+                                            <h7 class="recommended-grade">${camp.campGradeFormatted}</h7>
+                                            <h7 class="online">${camp.remoteString}</h7>
+                                            <h7 class="date">${camp.campStartWeek}-${camp.campEndWeek}</h7>
+                                            <h7 class="days">${camp.getCampDays()}</h7>
+                                            <h7 class="time">${camp.campTime}</h7>
+                                            <h7 class="capacity ${camp.getFull() ? "text-danger" : ""}"> ${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</h7>
+                                            <h7 class="cost">${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</h7>
+                                        </div>
+                                    </c:forEach>
+                                </c:when>
+
+                                <c:when test="${OnCampus eq false}">
+                                    <span>You can only register online camps, complete the medical form if your kid(s) wants to attend on-campus.</span>
+                                    <c:forEach items="${eligibleCamp}" var="camp">
+                                        <c:choose>
+                                            <c:when test="${camp.getRemote() eq true}">
+                                                <div class="class-entry ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-campID ="${camp.campOfferedID}" data-topic="${camp.campTopic}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
+                                                    <span class="checkbox-space">
+                                                        <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
+                                                        <div class="class-checkbox"></div>
+                                                    </span>
+                                                    <h7 class="camp-name">${camp.campLevel}</h7>
+                                                    <h7 class="recommended-grade">${camp.campGradeFormatted}</h7>
+                                                    <h7 class="online">${camp.remoteString}</h7>
+                                                    <h7 class="date">${camp.campStartWeek}-${camp.campEndWeek}</h7>
+                                                    <h7 class="days">${camp.getCampDays()}</h7>
+                                                    <h7 class="time">${camp.campTime}</h7>
+                                                    <h7 class="capacity ${camp.getFull() ? "text-danger" : ""}"> ${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</h7>
+                                                    <h7 class="cost">${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</h7>
+                                                </div>
+                                            </c:when>
+                                            <c:otherwise>
+                                                <div class="class-entry ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-campID ="${camp.campOfferedID}" data-topic="${camp.campTopic}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}
+                                                     style="color: red">
+                                                    <span class="checkbox-space">
+                                                        <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
+                                                        <div class="class-checkbox"></div>
+                                                    </span>
+                                                    <h7 class="camp-name">${camp.campLevel}</h7>
+                                                    <h7 class="recommended-grade">${camp.campGradeFormatted}</h7>
+                                                    <h7 class="online">${camp.remoteString}</h7>
+                                                    <h7 class="date">${camp.campStartWeek}-${camp.campEndWeek}</h7>
+                                                    <h7 class="days">${camp.getCampDays()}</h7>
+                                                    <h7 class="time">${camp.campTime}</h7>
+                                                    <h7 class="capacity ${camp.getFull() ? "text-danger" : ""}"> ${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</h7>
+                                                    <h7 class="cost">${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</h7>
+                                                </div>
+                                            </c:otherwise>
+                                        </c:choose>
+
+
+                                    </c:forEach>
+                                </c:when>
+                            </c:choose>
+
                         </div>
 
                         <!-- FOR MOBILE -->
