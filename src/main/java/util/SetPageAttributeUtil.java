@@ -141,11 +141,10 @@ public class SetPageAttributeUtil {
         }
 
         if(student.getMedForm() != null) {
-            student.setOnCampus(true);
+            request.getSession().setAttribute("OnCampus", true);
         }
         else {
-            student.setMedForm(null);
-            student.setOnCampus(false);
+            request.getSession().setAttribute("OnCampus", false);
         }
 
         request.getSession().setAttribute("studentID", studentID);
