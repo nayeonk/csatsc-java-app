@@ -38,42 +38,32 @@
 
             <h5>Filter By...</h5>
 
+
             <div class="filter margin-below">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle dropdown-initial" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        Topic
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <c:forEach items="${campTopics}" var="campTopic">
-                            <a class="dropdown-item" href="#">
-                                <div class="checkbox">
-                                    <label for="${campTopic.getTopic()}">
-                                        <input type="checkbox" id="${campTopic.getTopic()}" checked> <span data-topic="${campTopic.getTopic()}" class="dropdown-check-text">${campTopic.getTopic()} </span>
-                                    </label>
-                                </div>
-                            </a>
-                        </c:forEach>
-                    </div>
+                <div class="topic-filter"  style="display: inline">
+                    <c:forEach items="${campTopics}" var="campTopic">
+                        <a class="dropdown-item" href="#">
+                            <div class="checkbox">
+                                <label for="${campTopic.getTopic()}">
+                                    <input type="checkbox" id="${campTopic.getTopic()}" checked> <span data-topic="${campTopic.getTopic()}" class="dropdown-check-text">${campTopic.getTopic()} </span>
+                                </label>
+                            </div>
+                        </a>
+                    </c:forEach>
                 </div>
 
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle dropdown-initial" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        Level
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <c:forEach items="${campLevels}" var="campLevel">
-                            <a class="dropdown-item" href="#">
-                                <div class="checkbox">
-                                    <label for="${campLevel.getCampLevelDescription()}">
-                                        <input type="checkbox" id="${campLevel.getCampLevelDescription()}" checked> <span data-level="${campLevel.getCampLevelDescription()}" class="dropdown-check-text"> ${campLevel.getCampLevelDescription()} </span>
-                                    </label>
-                                </div>
-                            </a>
-                        </c:forEach>
-                    </div>
+                <div class="level-filter"  style="display: inline">
+                    <c:forEach items="${campLevels}" var="campLevel">
+                        <a class="dropdown-item" href="#">
+                            <div class="checkbox">
+                                <label for="${campLevel.getCampLevelDescription()}">
+                                    <input type="checkbox" id="${campLevel.getCampLevelDescription()}" checked> <span data-level="${campLevel.getCampLevelDescription()}" class="dropdown-check-text"> ${campLevel.getCampLevelDescription()} </span>
+                                </label>
+                            </div>
+                        </a>
+                    </c:forEach>
                 </div>
+
             </div>
 
             <button type="button" class="btn btn-secondary" onclick="handleApplyAllFilters()"> Apply All Filters </button>
@@ -181,9 +171,6 @@
                 <div id="selected-contents">
 
                 </div>
-
-
-
             </div>
 
             <!-- FOR MOBILE -->
@@ -220,7 +207,15 @@
 
                             <c:choose>
                                 <c:when test="${OnCampus eq true}">
-                                    <span>You are cleared to register all camps</span>
+                                    <span>You are cleared to register all available camps.</span>
+                                </c:when>
+                                <c:otherwise>
+                                    <span>You can online register for online camps. Please fill in the camper's medical information.</span>
+                                </c:otherwise>
+                            </c:choose>
+
+                            <c:choose>
+                                <c:when test="${OnCampus eq true}">
                                     <c:forEach items="${eligibleCamp}" var="camp">
                                         <div class="class-entry ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-campID ="${camp.campOfferedID}" data-topic="${camp.campTopic}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
 										<span class="checkbox-space">
@@ -240,7 +235,6 @@
                                 </c:when>
 
                                 <c:when test="${OnCampus eq false}">
-                                    <span>You can only register online camps, complete the medical form if your kid(s) wants to attend on-campus.</span>
                                     <c:forEach items="${eligibleCamp}" var="camp">
                                         <c:choose>
                                             <c:when test="${camp.getRemote() eq true}">
@@ -287,53 +281,170 @@
 
                         <!-- FOR MOBILE -->
                         <div class="topic-contents d-block d-sm-none">
+                            <c:choose>
+                                <c:when test="${OnCampus eq true}">
+                                    <span>You are cleared to register all available camps.</span>
+                                </c:when>
+                                <c:otherwise>
+                                    <span>You can online register for online camps. Please fill in the camper's medical information.</span>
+                                </c:otherwise>
+                            </c:choose>
+
                             <c:forEach items="${eligibleCamp}" var="camp">
-                                <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
+
+                                <c:choose>
+                                    <c:when test="${OnCampus eq true}">
+                                        <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
 										<span class="checkbox-space">
 											<input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
 											<div class="class-checkbox"></div>
 										</span>
 
-                                    <div class="class-entry-description">
-                                        <h7 class="small-header ">Camp Level</h7>
-                                        <span>${camp.campLevel}</span>
-                                    </div>
+                                            <div class="class-entry-description">
+                                                <h7 class="small-header ">Camp Level</h7>
+                                                <span>${camp.campLevel}</span>
+                                            </div>
 
-                                    <div class="class-entry-description">
-                                        <h7 class="small-header">Recommended Grade</h7>
-                                        <span>${camp.campGradeFormatted}</span>
-                                    </div>
+                                            <div class="class-entry-description">
+                                                <h7 class="small-header">Recommended Grade</h7>
+                                                <span>${camp.campGradeFormatted}</span>
+                                            </div>
 
-                                    <div class="class-entry-description">
-                                        <h7 class="small-header">Location</h7>
-                                        <span>${camp.remoteString}</span>
-                                    </div>
+                                            <div class="class-entry-description">
+                                                <h7 class="small-header">Location</h7>
+                                                <span>${camp.remoteString}</span>
+                                            </div>
 
-                                    <div class="class-entry-description">
-                                        <h7 class="small-header">Date</h7>
-                                        <span>${camp.campStartWeek}-${camp.campEndWeek}</span>
-                                    </div>
+                                            <div class="class-entry-description">
+                                                <h7 class="small-header">Date</h7>
+                                                <span>${camp.campStartWeek}-${camp.campEndWeek}</span>
+                                            </div>
 
-                                    <div class="class-entry-description">
-                                        <h7 class="small-header">Days</h7>
-                                        <span>${camp.getCampDays()}</span>
-                                    </div>
+                                            <div class="class-entry-description">
+                                                <h7 class="small-header">Days</h7>
+                                                <span>${camp.getCampDays()}</span>
+                                            </div>
 
-                                    <div class="class-entry-description">
-                                        <h7 class="small-header">Time</h7>
-                                        <span>${camp.campTime}</span>
-                                    </div>
+                                            <div class="class-entry-description">
+                                                <h7 class="small-header">Time</h7>
+                                                <span>${camp.campTime}</span>
+                                            </div>
 
-                                    <div class="class-entry-description ${camp.getFull() ? "text-danger" : ""}">
-                                        <h7 class="small-header">Capacity</h7>
-                                        <span>${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</span>
-                                    </div>
+                                            <div class="class-entry-description ${camp.getFull() ? "text-danger" : ""}">
+                                                <h7 class="small-header">Capacity</h7>
+                                                <span>${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</span>
+                                            </div>
 
-                                    <div class="class-entry-description">
-                                        <h7 class="small-header">Price</h7>
-                                        <span>${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</span>
-                                    </div>
-                                </div>
+                                            <div class="class-entry-description">
+                                                <h7 class="small-header">Price</h7>
+                                                <span>${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</span>
+                                            </div>
+                                        </div>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:choose>
+                                            <c:when test="${camp.getRemote() eq true}">
+                                                <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
+                                                <span class="checkbox-space">
+                                                    <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
+                                                    <div class="class-checkbox"></div>
+                                                </span>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header ">Camp Level</h7>
+                                                        <span>${camp.campLevel}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Recommended Grade</h7>
+                                                        <span>${camp.campGradeFormatted}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Location</h7>
+                                                        <span>${camp.remoteString}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Date</h7>
+                                                        <span>${camp.campStartWeek}-${camp.campEndWeek}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Days</h7>
+                                                        <span>${camp.getCampDays()}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Time</h7>
+                                                        <span>${camp.campTime}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description ${camp.getFull() ? "text-danger" : ""}">
+                                                        <h7 class="small-header">Capacity</h7>
+                                                        <span>${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Price</h7>
+                                                        <span>${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</span>
+                                                    </div>
+                                                </div>
+                                            </c:when>
+                                            <c:otherwise>
+                                                <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}
+                                                     style = "color:red">
+                                                <span class="checkbox-space">
+                                                    <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
+                                                    <div class="class-checkbox"></div>
+                                                </span>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header ">Camp Level</h7>
+                                                        <span>${camp.campLevel}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Recommended Grade</h7>
+                                                        <span>${camp.campGradeFormatted}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Location</h7>
+                                                        <span>${camp.remoteString}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Date</h7>
+                                                        <span>${camp.campStartWeek}-${camp.campEndWeek}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Days</h7>
+                                                        <span>${camp.getCampDays()}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Time</h7>
+                                                        <span>${camp.campTime}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description ${camp.getFull() ? "text-danger" : ""}">
+                                                        <h7 class="small-header">Capacity</h7>
+                                                        <span>${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</span>
+                                                    </div>
+
+                                                    <div class="class-entry-description">
+                                                        <h7 class="small-header">Price</h7>
+                                                        <span>${parent.getUSCEmployee() ? camp.employeePrice : camp.price}</span>
+                                                    </div>
+                                                </div>
+                                            </c:otherwise>
+                                        </c:choose>
+
+                                    </c:otherwise>
+                                </c:choose>
+
                             </c:forEach>
                         </div>
                     </div>

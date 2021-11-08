@@ -65,13 +65,12 @@
 
 					<!-- OnCampus -->
 					<div class="customRow margin-below">
-						<div class="required full-line margin-below">Does this child want to attend the camp in person?</div>
 						<div id="OnCampus-div">
 							<div class="customRow center-vertical">
 								<c:choose>
 									<c:when test="${OnCampus eq true}">
 										<br />
-										<span> You may now register all available. </span>
+										<span> You may now register all available camps. </span>
 									</c:when>
 
 									<c:when test="${OnCampus eq false}">

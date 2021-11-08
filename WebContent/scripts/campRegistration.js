@@ -255,17 +255,17 @@ function handleApplyFilters() {
 	const filters = document.querySelector(".filter").children;
 
 	// Look at selected filters for topics
-	const topics = filters[0].children[1].children;
+	//const topics = filters[0].children[1].children;
+	const topics = filters[0].children;
 	for (let i = 0; i < topics.length; i++) {
 		const topic = topics[i].children[0].children[0].children[1].dataset.topic;
 		const checked = topics[i].children[0].children[0].children[0].checked;
-
 		// If that filter is not checked, hide it
-		if (!checked) {
+		if(!checked){
 			let topics = document.querySelectorAll(".topic");
 			for (let j = 0; j < topics.length; j++) {
-
 				// Don't hide if in selected-box
+				//console.log(topics[j].dataset.topic.trim())
 				if (!topics[j].classList.contains("selected-box")) {
 					if (topics[j].dataset.topic.trim() == topic.trim()) {
 						topics[j].style.display = "none";
@@ -276,7 +276,7 @@ function handleApplyFilters() {
 	}
 
 	// Look at selected filters for levels
-	const levels = filters[1].children[1].children;
+	const levels = filters[1].children;
 	for (let i = 0; i < levels.length; i++) {
 		const level = levels[i].children[0].children[0].children[1].innerHTML.trim();
 		const checked = levels[i].children[0].children[0].children[0].checked;
