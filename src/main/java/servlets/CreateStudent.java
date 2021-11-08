@@ -129,7 +129,7 @@ public class CreateStudent extends HttpServlet {
                 request.getRequestDispatcher("/WEB-INF/camper/camperProfile.jsp").forward(request, response);
             } else {
                 errorMessage = createStudent(request);
-
+//                System.out.println("here");
                 // if error creating student
                 if (errorMessage.length() > 0) {
                     repopulateAttributes(request);

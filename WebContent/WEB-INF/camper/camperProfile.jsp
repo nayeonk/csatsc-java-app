@@ -44,8 +44,7 @@
                 <br>Your changes will not be saved until you click <i>Save & Continue</i>.
             </p>
             <c:choose>
-<%--            ||  errorMessage.isBlank()--%>
-                <c:when test="${errorMessage == null }">
+                <c:when test="${errorMessage == null ||  errorMessage.isBlank()}">
                     <div class="message-popup" style="display:none;text-align:center;z-index:999999999;">
                 </c:when>
                 <c:otherwise>

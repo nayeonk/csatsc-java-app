@@ -1,0 +1,42 @@
+.soc-media {
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+}
+.soc-more a {
+  border-left: 1px solid #eee;
+}
+.soc-more i {
+  color: #999;
+}
+.soc-more:hover i {
+  opacity: 1;
+  color:#fff;
+}
+.footer {
+  background: #f7f7f7;
+}
+.footer-widget {
+  color: #444;
+}
+.footer .widget-title {
+  color: #444;
+}
+.footer-widget a {
+  color: #444;
+}
+.footer-bottom {
+  border-top: 1px solid #eee;
+  color: #444;
+}
+.footer-bottom a {
+  color: #444;
+}
+.foot_menu ul li a {
+  color:#444;
+}
+.contact-composer li i {
+  color: #444;
+}
+.soc-medeia-footer:last-child .soc-more a {
+  border-right: 1px solid #eee;
+}

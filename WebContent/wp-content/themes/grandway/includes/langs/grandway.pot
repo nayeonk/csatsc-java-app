@@ -1,0 +1,2600 @@
+# Copyright (c) Phoenix Team, {2015}
+msgid ""
+msgstr ""
+"Project-Id-Version: GrandWay 1.0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-09-14 00:46:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Phoenix Team <phoenix.team.themes@gmail.com>\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:14
+msgid "Error"
+msgstr ""
+
+#: 404.php:34
+msgid "Oops, 404 Error!"
+msgstr ""
+
+#: 404.php:35
+msgid "The page you were looking for could not be found."
+msgstr ""
+
+#: archive.php:18
+msgid "Archives"
+msgstr ""
+
+#: archive.php:79 author.php:99 category.php:78 index.php:124 search.php:84
+#: single-attachment.php:126 single-grandway_portfolio.php:326 single.php:154
+#: tag.php:77
+msgid "Sorry, nothing to display."
+msgstr ""
+
+#: author.php:18 single-grandway_portfolio.php:97
+#: single-grandway_portfolio.php:99
+msgid "Author"
+msgstr ""
+
+#: author.php:64 single.php:106
+msgid "About author:"
+msgstr ""
+
+#: category.php:18 single-grandway_portfolio.php:87
+msgid "Category"
+msgstr ""
+
+#: comments.php:8
+msgid "Post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:23
+msgid "Send Comment"
+msgstr ""
+
+#: comments.php:31
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:37
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:52 includes/widgets/widget-contact-form.php:41
+#: single-grandway_portfolio.php:77
+msgid "Name"
+msgstr ""
+
+#: comments.php:57 includes/widgets/widget-contact-form.php:44
+msgid "E-mail"
+msgstr ""
+
+#: comments.php:62
+msgid "Web Site"
+msgstr ""
+
+#: comments.php:68
+msgid "on"
+msgstr ""
+
+#: comments.php:76 comments.php:81
+msgid "Comments are closed here."
+msgstr ""
+
+#: footer.php:30 footer.php:76
+msgid "Drop a widget on \"Footer Sidebar 1\" sidebar at Appearance > Widgets page."
+msgstr ""
+
+#: footer.php:42 footer.php:87
+msgid "Drop a widget on \"Footer Sidebar 2\" sidebar at Appearance > Widgets page."
+msgstr ""
+
+#: footer.php:53 footer.php:98
+msgid "Drop a widget on \"Footer Sidebar 3\" sidebar at Appearance > Widgets page."
+msgstr ""
+
+#: footer.php:64
+msgid "Drop a widget on \"Footer Sidebar 4\" sidebar at Appearance > Widgets page."
+msgstr ""
+
+#: format-audio.php:71 format-gallery.php:69 format-image.php:41
+#: format-link.php:71 format-quote.php:43 format-standard.php:41
+#: format-video.php:63 includes/helpers/internals.php:371
+#: includes/helpers/internals.php:417 single-attachment.php:73
+msgid "by"
+msgstr ""
+
+#: format-audio.php:72 format-gallery.php:70 format-image.php:42
+#: format-link.php:72 format-quote.php:44 format-standard.php:42
+#: format-video.php:64 includes/shortcodes/shortcodes-class.php:161
+#: single-attachment.php:74
+msgid "in"
+msgstr ""
+
+#: format-audio.php:72 format-gallery.php:70 format-image.php:42
+#: format-link.php:72 format-quote.php:44 format-standard.php:42
+#: format-video.php:64 single-attachment.php:74
+msgid "No comments"
+msgstr ""
+
+#: format-audio.php:72 format-gallery.php:70 format-image.php:42
+#: format-link.php:72 format-quote.php:44 format-standard.php:42
+#: format-video.php:64 single-attachment.php:74
+msgid "1 comment"
+msgstr ""
+
+#: format-audio.php:72 format-gallery.php:70 format-image.php:42
+#: format-link.php:72 format-quote.php:44 format-standard.php:42
+#: format-video.php:64 single-attachment.php:74
+msgid "% comments"
+msgstr ""
+
+#: format-audio.php:72 format-gallery.php:70 format-image.php:42
+#: format-link.php:72 format-quote.php:44 format-standard.php:42
+#: format-video.php:64 single-attachment.php:74
+msgid "Comments off"
+msgstr ""
+
+#: format-audio.php:89 format-gallery.php:87 format-image.php:59
+#: format-link.php:89 format-quote.php:69 format-standard.php:59
+#: format-video.php:81
+msgid "Read More"
+msgstr ""
+
+#: includes/core.php:187
+msgid "Main Menu"
+msgstr ""
+
+#: includes/core.php:188
+msgid "Footer Menu"
+msgstr ""
+
+#: includes/deps/settings/js_composer.php:34
+msgid "Homepage"
+msgstr ""
+
+#: includes/deps/settings/js_composer.php:98
+msgid "About Us Page"
+msgstr ""
+
+#: includes/deps/settings/js_composer.php:134
+msgid "Services Page"
+msgstr ""
+
+#: includes/deps/settings/js_composer.php:159
+msgid "Contacts Page"
+msgstr ""
+
+#: includes/deps/tgm.php:81
+#: includes/helpers/class-tgm-plugin-activation.php:323
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/deps/tgm.php:82
+#: includes/helpers/class-tgm-plugin-activation.php:324
+msgid "Install Plugins"
+msgstr ""
+
+#: includes/deps/tgm.php:83
+#: includes/helpers/class-tgm-plugin-activation.php:325
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: includes/deps/tgm.php:84
+#: includes/helpers/class-tgm-plugin-activation.php:326
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: includes/deps/tgm.php:85
+#: includes/helpers/class-tgm-plugin-activation.php:327
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:86
+#: includes/helpers/class-tgm-plugin-activation.php:332
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:87
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:88
+#: includes/helpers/class-tgm-plugin-activation.php:357
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:89
+#: includes/helpers/class-tgm-plugin-activation.php:362
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:90
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:91
+#: includes/helpers/class-tgm-plugin-activation.php:342
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:92
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:93
+#: includes/helpers/class-tgm-plugin-activation.php:372
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:94
+#: includes/helpers/class-tgm-plugin-activation.php:382
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/deps/tgm.php:95
+#: includes/helpers/class-tgm-plugin-activation.php:387
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/deps/tgm.php:96
+#: includes/helpers/class-tgm-plugin-activation.php:389
+#: includes/helpers/class-tgm-plugin-activation.php:3019
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/deps/tgm.php:97
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: includes/enqueues/scripts.php:109 single-grandway_portfolio.php:245
+msgid "Error! Please refresh the page!"
+msgstr ""
+
+#: includes/enqueues/scripts.php:110 single-grandway_portfolio.php:245
+msgid "Loading..."
+msgstr ""
+
+#: includes/enqueues/scripts.php:111 single-grandway_portfolio.php:245
+msgid "No More Works"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:337
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:347
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:352
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:367
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:377
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:388
+msgid "Return to the dashboard"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:390
+#: includes/helpers/class-tgm-plugin-activation.php:2822
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:391
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:392
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:393
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:394
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:395
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:510
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:511
+msgid "Update Required"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:625
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:818
+#: includes/helpers/class-tgm-plugin-activation.php:3428
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:925
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:925
+#: includes/helpers/class-tgm-plugin-activation.php:928
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:928
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2157
+msgid "Required"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2160
+msgid "Recommended"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2176
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2179
+msgid "External Source"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2182
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2199
+msgid "Not Installed"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2203
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2205
+msgid "Active"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2211
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2214
+msgid "Requires Update"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2217
+msgid "Update recommended"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2273
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2276
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2279
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2369
+msgid "Installed version:"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2377
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2389
+msgid "Available version:"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2412
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2426
+msgid "Plugin"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2427
+msgid "Source"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2428
+msgid "Type"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2432
+msgid "Version"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2433
+msgid "Status"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2560
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2593
+msgid "Install"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2599
+msgid "Update"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2602
+msgid "Activate"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2633
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2635
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2671
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2673
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2778
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2804
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3018
+msgid "Plugin activation failed."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3352
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3354
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3355
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3359
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3360
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3360
+#: includes/helpers/class-tgm-plugin-activation.php:3366
+msgid "Show Details"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3360
+#: includes/helpers/class-tgm-plugin-activation.php:3366
+msgid "Hide Details"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3361
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3362
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3365
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3366
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3367
+msgid "All installations have been completed."
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:3368
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/helpers/internals.php:91
+msgid "Search..."
+msgstr ""
+
+#: includes/helpers/internals.php:145
+msgid "Subtitle"
+msgstr ""
+
+#: includes/helpers/internals.php:169
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/helpers/internals.php:208
+#: includes/shortcodes/shortcodes-mapper.php:52
+msgid "None"
+msgstr ""
+
+#: includes/helpers/internals.php:300
+msgid "Details"
+msgstr ""
+
+#: includes/helpers/internals.php:314
+msgid "This message was sent via contact form from"
+msgstr ""
+
+#: includes/helpers/internals.php:419
+msgid "View Project"
+msgstr ""
+
+#: includes/helpers/internals.php:438 includes/helpers/internals.php:439
+msgid "Support"
+msgstr ""
+
+#: includes/helpers/internals.php:474
+msgid "Page %s"
+msgstr ""
+
+#: includes/helpers/likes.php:169 includes/helpers/likes.php:234
+msgid "You Like:"
+msgstr ""
+
+#: includes/helpers/likes.php:200
+msgid "You don't like anything yet."
+msgstr ""
+
+#: includes/helpers/likes.php:281
+msgid "Today's Most Popular Posts"
+msgstr ""
+
+#: includes/helpers/likes.php:328
+msgid "This Month's Most Popular Posts"
+msgstr ""
+
+#: includes/helpers/likes.php:375
+msgid "This Week's Most Popular Posts"
+msgstr ""
+
+#: includes/helpers/likes.php:399
+msgid "Most Popular Posts"
+msgstr ""
+
+#: includes/helpers/utils.php:50
+msgid "Home"
+msgstr ""
+
+#: includes/helpers/utils.php:72
+msgid "Home Page"
+msgstr ""
+
+#: includes/helpers/utils.php:90
+msgid "Search for: "
+msgstr ""
+
+#: includes/helpers/utils.php:174
+msgid "404 page"
+msgstr ""
+
+#: includes/helpers/utils.php:179
+msgid "Page "
+msgstr ""
+
+#: includes/helpers/utils.php:204
+msgid "Edit"
+msgstr ""
+
+#: includes/helpers/utils.php:208
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/helpers/utils.php:262 single-grandway_portfolio.php:141
+#: single-grandway_portfolio.php:183 single.php:84 single.php:116
+msgid "Prev"
+msgstr ""
+
+#: includes/helpers/utils.php:263 single-grandway_portfolio.php:145
+#: single-grandway_portfolio.php:187 single.php:83 single.php:123
+msgid "Next"
+msgstr ""
+
+#: includes/helpers/utils.php:475
+msgid "RSS Feed"
+msgstr ""
+
+#: includes/options/config.php:75
+msgid "Opts"
+msgstr ""
+
+#: includes/options/config.php:76
+msgid "Options"
+msgstr ""
+
+#: includes/options/config.php:101
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: includes/options/config.php:106
+msgid "Buy our items on Envato"
+msgstr ""
+
+#: includes/options/config.php:125
+msgid "Theme Online Documentation"
+msgstr ""
+
+#: includes/options/config.php:126
+msgid ""
+"<p>Please see it online at <a target=\"_blank\" "
+"href=\"//phoenix-theme.com/documentation/grandway/\">http://phoenix-theme."
+"com</a>.</p>"
+msgstr ""
+
+#: includes/options/config.php:130
+msgid "Our Products Knowledge Base"
+msgstr ""
+
+#: includes/options/config.php:135
+msgid "Get Online Support"
+msgstr ""
+
+#: includes/options/settings/appearance.php:7
+msgid ""
+"You have set the Site icon via WordPress customizer. If you want to use our "
+"fallback version instead, you should remove the Site icon <a "
+"target='_blank' href='%s'>here</a>."
+msgstr ""
+
+#: includes/options/settings/appearance.php:9
+msgid ""
+"You see this section, because you don't set the Site icon. Since v.4.3 "
+"WordPress has native icons, this section of the theme is deprecated and "
+"will be removed soon, so please set the Site icon <a target='_blank' "
+"href='%s'>here</a>."
+msgstr ""
+
+#: includes/options/settings/appearance.php:13
+msgid "Appearance"
+msgstr ""
+
+#: includes/options/settings/appearance.php:22
+msgid "Layout Style"
+msgstr ""
+
+#: includes/options/settings/appearance.php:23
+msgid "Choose boxed or full page mode"
+msgstr ""
+
+#: includes/options/settings/appearance.php:25
+msgid "Full Width"
+msgstr ""
+
+#: includes/options/settings/appearance.php:26
+msgid "Boxed"
+msgstr ""
+
+#: includes/options/settings/appearance.php:35
+msgid "Body Background"
+msgstr ""
+
+#: includes/options/settings/appearance.php:36
+msgid "Body background with image, color, etc."
+msgstr ""
+
+#: includes/options/settings/appearance.php:37
+msgid "Will be used if you choose a boxed layout."
+msgstr ""
+
+#: includes/options/settings/appearance.php:46
+msgid "Use Custom Color?"
+msgstr ""
+
+#: includes/options/settings/appearance.php:47
+msgid "Choose custom color for headers, menus, etc."
+msgstr ""
+
+#: includes/options/settings/appearance.php:61
+msgid "Custom Color"
+msgstr ""
+
+#: includes/options/settings/appearance.php:62
+msgid "You can define a new custom color for the theme  scheme."
+msgstr ""
+
+#: includes/options/settings/appearance.php:71
+msgid "Use Custom Fonts?"
+msgstr ""
+
+#: includes/options/settings/appearance.php:72
+msgid "Choose custom fonts for headers, menus, etc."
+msgstr ""
+
+#: includes/options/settings/appearance.php:85
+msgid "Titles Font"
+msgstr ""
+
+#: includes/options/settings/appearance.php:121
+msgid "General Font"
+msgstr ""
+
+#: includes/options/settings/appearance.php:155
+msgid "Theme Icons"
+msgstr ""
+
+#: includes/options/settings/appearance.php:166
+msgid "Favicon"
+msgstr ""
+
+#: includes/options/settings/appearance.php:167
+msgid "Upload a 16px x 16px png/gif/ico icon"
+msgstr ""
+
+#: includes/options/settings/appearance.php:176
+msgid "Apple iPhone Icon"
+msgstr ""
+
+#: includes/options/settings/appearance.php:177
+msgid "Upload a 57px x 57px png/gif/ico icon for Classic iPhone"
+msgstr ""
+
+#: includes/options/settings/appearance.php:186
+msgid "Apple iPhone Retina Icon"
+msgstr ""
+
+#: includes/options/settings/appearance.php:187
+msgid "Upload a 114px x 114px png/gif/ico icon for Retina iPhone"
+msgstr ""
+
+#: includes/options/settings/appearance.php:196
+msgid "Apple iPad Icon"
+msgstr ""
+
+#: includes/options/settings/appearance.php:197
+msgid "Upload a 72px x 72px png/gif/ico icon for Classic iPad"
+msgstr ""
+
+#: includes/options/settings/appearance.php:206
+msgid "Apple iPad Retina Icon"
+msgstr ""
+
+#: includes/options/settings/appearance.php:207
+msgid "Upload a 144px x 144px png/gif/ico icon for Retina iPad"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog"
+msgstr ""
+
+#: includes/options/settings/blog.php:11
+msgid "Blog Sidebar Position"
+msgstr ""
+
+#: includes/options/settings/blog.php:12
+msgid "Select a sidebar position for blog pages."
+msgstr ""
+
+#: includes/options/settings/blog.php:24
+msgid "Blog Sidebar Widgets Area"
+msgstr ""
+
+#: includes/options/settings/blog.php:25
+msgid "Select widgets area for blog pages."
+msgstr ""
+
+#: includes/options/settings/blog.php:33
+msgid "Blog Layout Type."
+msgstr ""
+
+#: includes/options/settings/blog.php:34
+msgid "Select layout type for blog pages."
+msgstr ""
+
+#: includes/options/settings/blog.php:36
+msgid "Classic"
+msgstr ""
+
+#: includes/options/settings/blog.php:37
+msgid "Medium"
+msgstr ""
+
+#: includes/options/settings/blog.php:45
+msgid "Use Social Share Buttons?"
+msgstr ""
+
+#: includes/options/settings/blog.php:46
+msgid "Enable/Disable social share buttons for a single posts."
+msgstr ""
+
+#: includes/options/settings/blog.php:57
+msgid "Post Social Share Buttons"
+msgstr ""
+
+#: includes/options/settings/blog.php:58
+msgid "Choose what buttons you need to show on a single post."
+msgstr ""
+
+#: includes/options/settings/footer.php:4
+msgid "Footer"
+msgstr ""
+
+#: includes/options/settings/footer.php:11
+msgid "Use Footer Widgets?"
+msgstr ""
+
+#: includes/options/settings/footer.php:12
+msgid "You can turn off footer widgets, if you need."
+msgstr ""
+
+#: includes/options/settings/footer.php:23
+msgid "Show Twitter Feed in Footer?"
+msgstr ""
+
+#: includes/options/settings/footer.php:34
+msgid "Twitter Userame"
+msgstr ""
+
+#: includes/options/settings/footer.php:35
+msgid "The account name, from which the feed will be displayed."
+msgstr ""
+
+#: includes/options/settings/footer.php:36
+#: includes/options/settings/footer.php:46
+msgid "Please note that changes may require up to 10 minutes."
+msgstr ""
+
+#: includes/options/settings/footer.php:44
+msgid "Twitter Feed Quantity"
+msgstr ""
+
+#: includes/options/settings/footer.php:45
+msgid "How many tweets you want to display?"
+msgstr ""
+
+#: includes/options/settings/footer.php:56
+msgid "Footer Layout"
+msgstr ""
+
+#: includes/options/settings/footer.php:57
+msgid "You can choose how many columns you want in footer."
+msgstr ""
+
+#: includes/options/settings/footer.php:69
+msgid "Copytight Text"
+msgstr ""
+
+#: includes/options/settings/footer.php:70
+msgid "Place here your copyright. HTML tags are allowed."
+msgstr ""
+
+#: includes/options/settings/header.php:4
+msgid "Header"
+msgstr ""
+
+#: includes/options/settings/header.php:12
+msgid "Custom Logo"
+msgstr ""
+
+#: includes/options/settings/header.php:14
+msgid "Upload your logo."
+msgstr ""
+
+#: includes/options/settings/header.php:22
+msgid "Custom Retina Logo"
+msgstr ""
+
+#: includes/options/settings/header.php:24
+msgid "Upload your retina logo."
+msgstr ""
+
+#: includes/options/settings/header.php:31
+msgid "Use sticky menu?"
+msgstr ""
+
+#: includes/options/settings/other.php:4
+msgid "Other"
+msgstr ""
+
+#: includes/options/settings/other.php:12
+msgid "Contact Form E-mail"
+msgstr ""
+
+#: includes/options/settings/other.php:13
+msgid "Your email(s) for contact form widget."
+msgstr ""
+
+#: includes/options/settings/other.php:14
+msgid "Add more email addresses"
+msgstr ""
+
+#: includes/options/settings/other.php:21
+msgid "Show WordPress Admin Bar?"
+msgstr ""
+
+#: includes/options/settings/other.php:22
+msgid "You can disable it for <i><b>all users</b></i> here."
+msgstr ""
+
+#: includes/options/settings/other.php:33
+msgid "Use Multisocial Buttons?"
+msgstr ""
+
+#: includes/options/settings/other.php:34
+msgid ""
+"Use multisocial (dynamically defined) or predifined social buttons for Team "
+"Members"
+msgstr ""
+
+#: includes/options/settings/other.php:45
+msgid "Enable Google Analytics?"
+msgstr ""
+
+#: includes/options/settings/other.php:46
+msgid "Enables/Disables GA Tracking Code for your website."
+msgstr ""
+
+#: includes/options/settings/other.php:58
+msgid "Google Analytics Property ID"
+msgstr ""
+
+#: includes/options/settings/other.php:59
+msgid ""
+"Place here your Google Analytics Property ID. It should look like "
+"`UA-XXXXX-X`.<br />You can find it inside your Google Analytics Dashboard."
+msgstr ""
+
+#: includes/options/settings/other.php:67
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/options/settings/other.php:68
+msgid "Paste your CSS code her."
+msgstr ""
+
+#: includes/options/settings/other.php:79
+msgid "Custom JavaScript"
+msgstr ""
+
+#: includes/options/settings/other.php:80
+msgid "Paste your JavaScript code here."
+msgstr ""
+
+#: includes/options/settings/page.php:4
+msgid "Page"
+msgstr ""
+
+#: includes/options/settings/page.php:11
+msgid "Page Sidebar Position"
+msgstr ""
+
+#: includes/options/settings/page.php:12
+msgid "Select a sidebar position for pages."
+msgstr ""
+
+#: includes/options/settings/page.php:24
+msgid "Page Sidebar Widgets Area"
+msgstr ""
+
+#: includes/options/settings/page.php:25
+msgid "Select widgets area for pages."
+msgstr ""
+
+#: includes/options/settings/page.php:33
+msgid "Show Breadcrumbs?"
+msgstr ""
+
+#: includes/options/settings/page.php:34
+msgid "Show Breadcrumbs on top of the pages?"
+msgstr ""
+
+#: includes/options/settings/page.php:45
+msgid "Show Comments on Pages?"
+msgstr ""
+
+#: includes/options/settings/page.php:46
+msgid "Enables comments for static pages."
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Portfolio"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:12
+msgid "Portfolio Page Layout."
+msgstr ""
+
+#: includes/options/settings/portfolio.php:13
+msgid "Select layout for portfolio pages."
+msgstr ""
+
+#: includes/options/settings/portfolio.php:15
+msgid "2 Columns"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:16
+msgid "3 Columns"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:17
+msgid "4 Columns"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:18
+msgid "Fullwidth"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:26
+msgid "Portfolio Items quantity"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:27
+msgid "How many portfolio items will be shown on portfolio page."
+msgstr ""
+
+#: includes/options/settings/portfolio.php:38
+msgid "Portfolio Single Items Layout"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:39
+msgid "Select layout for portfolio single items."
+msgstr ""
+
+#: includes/options/settings/portfolio.php:41
+msgid "Half"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:42
+msgid "Wide"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:50
+msgid "Related Items quantity"
+msgstr ""
+
+#: includes/options/settings/portfolio.php:51
+msgid "How many portfolio items will be shown on portfolio single page."
+msgstr ""
+
+#: includes/options/settings/sidebars.php:5
+msgid "Sidebars"
+msgstr ""
+
+#: includes/options/settings/sidebars.php:11
+msgid "Sidebars Generator"
+msgstr ""
+
+#: includes/options/settings/sidebars.php:13
+msgid "Add Sidebar"
+msgstr ""
+
+#: includes/options/settings/sidebars.php:14
+msgid "Add unlimited custom sidebars to you site."
+msgstr ""
+
+#: includes/options/settings/social.php:5
+#: includes/shortcodes/shortcodes-mapper.php:136
+#: includes/shortcodes/shortcodes-mapper.php:252
+msgid "Social"
+msgstr ""
+
+#: includes/options/settings/social.php:11
+msgid "RSS Feed Text"
+msgstr ""
+
+#: includes/options/settings/social.php:12
+msgid "Text for RSS feed on top of header."
+msgstr ""
+
+#: includes/options/settings/social.php:13
+msgid "Subscribe to be notified for updates:"
+msgstr ""
+
+#: includes/options/settings/social.php:20
+msgid "RSS Feed URL"
+msgstr ""
+
+#: includes/options/settings/social.php:21
+msgid "If you don't want to show RSS icon, make this field blank."
+msgstr ""
+
+#: includes/options/settings/social.php:28
+msgid "Header Social Icons"
+msgstr ""
+
+#: includes/options/settings/social.php:29
+msgid "Enable/Disable social icons in header."
+msgstr ""
+
+#: includes/options/settings/social.php:50
+msgid "Facebook URL"
+msgstr ""
+
+#: includes/options/settings/social.php:59
+msgid "Twitter URL"
+msgstr ""
+
+#: includes/options/settings/social.php:68
+msgid "Dribbble URL"
+msgstr ""
+
+#: includes/options/settings/social.php:77
+msgid "Flickr URL"
+msgstr ""
+
+#: includes/options/settings/social.php:86
+msgid "GitHub URL"
+msgstr ""
+
+#: includes/options/settings/social.php:95
+msgid "Instagram URL"
+msgstr ""
+
+#: includes/options/settings/social.php:104
+msgid "Pinterest URL"
+msgstr ""
+
+#: includes/options/settings/social.php:113
+msgid "Youtube URL"
+msgstr ""
+
+#: includes/options/settings/social.php:122
+msgid "Apple URL"
+msgstr ""
+
+#: includes/options/settings/social.php:131
+msgid "Linkedin URL"
+msgstr ""
+
+#: includes/options/settings/social.php:140
+msgid "Google Plus URL"
+msgstr ""
+
+#: includes/options/settings/social.php:149
+msgid "Vk URL"
+msgstr ""
+
+#: includes/options/settings/social.php:158
+msgid "Tumblr URL"
+msgstr ""
+
+#: includes/options/settings/social.php:167
+msgid "Foursquare URL"
+msgstr ""
+
+#: includes/options/settings/social.php:176
+msgid "Android URL"
+msgstr ""
+
+#: includes/options/settings/social.php:185
+msgid "Windows URL"
+msgstr ""
+
+#: includes/options/settings/social.php:194
+msgid "Behance URL"
+msgstr ""
+
+#: includes/options/settings/social.php:203
+msgid "Delicious URL"
+msgstr ""
+
+#: includes/options/settings/social.php:212
+msgid "Skype URL"
+msgstr ""
+
+#: includes/options/settings/social.php:221
+msgid "Vimeo URL"
+msgstr ""
+
+#: includes/options/settings/update.php:4
+msgid "Updates"
+msgstr ""
+
+#: includes/options/settings/update.php:13
+msgid "Recommend WooCommerce?"
+msgstr ""
+
+#: includes/options/settings/update.php:14
+#: includes/options/settings/update.php:27
+msgid "You can disable notification about it here."
+msgstr ""
+
+#: includes/options/settings/update.php:26
+msgid "Recommend Envato WordPress Toolkit?"
+msgstr ""
+
+#: includes/options/settings/update.php:46
+msgid "All Ok! Your theme updates is configured correctly"
+msgstr ""
+
+#: includes/options/settings/update.php:52
+msgid ""
+"To change your settings, visit <a "
+"href=\"?page=envato-wordpress-toolkit\">this page</a>."
+msgstr ""
+
+#: includes/options/settings/update.php:67
+#: includes/options/settings/update.php:88
+msgid "Your Envato Keys is not set!"
+msgstr ""
+
+#: includes/options/settings/update.php:72
+#: includes/options/settings/update.php:93
+msgid ""
+"To enable update notifications, please visit <a "
+"href=\"?page=envato-wordpress-toolkit\">this page</a>."
+msgstr ""
+
+#: includes/options/settings/update.php:109
+msgid "Envato WordPress Toolkit plugin does not installed or it is not active."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:6
+msgid ""
+"Click to <a "
+"href=\"tools.php?page=force-regenerate-thumbnails\">regenerate</a>"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:8
+msgid ""
+"Click to <a target=\"_blank\" "
+"href=\"plugin-install.php?tab=plugin-information&amp;plugin=force-"
+"regenerate-thumbnails&amp;TB_iframe=true\">install plugin</a>"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:11
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:21
+msgid "Product Image Sizes"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:23
+msgid ""
+"These settings affect the actual dimensions of images in your catalog - the "
+"display on the front-end will still be affected by CSS styles."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:25
+msgid ""
+"Also please note, that if you want to change \"Hard Crop\" options for "
+"WooCommerce images, you should go to its %s."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:27
+msgid ""
+"After changing these settings you may need to regenerate your thumbnails. "
+"%1$s."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:35
+msgid "Catalog Images"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:36
+msgid "Dimensions of catalog images."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:47
+msgid "Single Product Images"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:48
+msgid "Dimensions of single product images."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:59
+msgid "Product Thumbnails"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:60
+msgid "Dimensions of product thumbnails."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:77
+msgid "Quantity & Columns"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:77
+msgid ""
+"These settings let you choose how many products per row will be displayed "
+"on your shop main page and at the related products section. <br />Also here "
+"you can set a quantity of related products."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:84
+msgid "Catalog Products Columns"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:85
+msgid ""
+"Products of your main shop catalog will be organized in this number of "
+"columns."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:95
+msgid "Related Products Columns"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:96
+msgid "Related products will be organized in this number of columns."
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:106
+msgid "Related Products Quantity"
+msgstr ""
+
+#: includes/options/settings/woocommerce.php:107
+msgid "How many related products to show."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-class.php:103
+#: includes/shortcodes/shortcodes-mapper.php:74
+msgid "Recent Posts"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-class.php:398
+msgid "profile"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-class.php:445
+#: includes/shortcodes/shortcodes-mapper.php:261
+msgid "Some of Our Clients"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-class.php:456
+#: includes/shortcodes/shortcodes-class.php:695
+msgid "You didn't select any image."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-class.php:605
+#: includes/shortcodes/shortcodes-mapper.php:221
+msgid "Recent Projects"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:59
+msgid "You sould create some posts before you can use this widget"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:63
+msgid "Post Box"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:66
+#: includes/shortcodes/shortcodes-mapper.php:114
+#: includes/shortcodes/shortcodes-mapper.php:136
+#: includes/shortcodes/shortcodes-mapper.php:182
+#: includes/shortcodes/shortcodes-mapper.php:211
+#: includes/shortcodes/shortcodes-mapper.php:252
+#: includes/shortcodes/shortcodes-mapper.php:293
+#: includes/shortcodes/shortcodes-mapper.php:501
+#: includes/shortcodes/shortcodes-mapper.php:638
+#: includes/shortcodes/shortcodes-mapper.php:674
+#: includes/shortcodes/shortcodes-mapper.php:745
+msgid "Exclusive"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:66
+#: includes/shortcodes/shortcodes-mapper.php:114
+#: includes/shortcodes/shortcodes-mapper.php:182
+#: includes/shortcodes/shortcodes-mapper.php:211
+#: includes/shortcodes/shortcodes-mapper.php:501
+#: includes/shortcodes/shortcodes-mapper.php:638
+#: includes/shortcodes/shortcodes-mapper.php:674
+#: includes/shortcodes/shortcodes-mapper.php:745
+msgid "Content"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:72
+#: includes/shortcodes/shortcodes-mapper.php:119
+#: includes/shortcodes/shortcodes-mapper.php:141
+#: includes/shortcodes/shortcodes-mapper.php:190
+#: includes/shortcodes/shortcodes-mapper.php:219
+#: includes/shortcodes/shortcodes-mapper.php:259
+#: includes/widgets/widget-twitter.php:113
+msgid "Title"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:75
+#: includes/shortcodes/shortcodes-mapper.php:191
+#: includes/shortcodes/shortcodes-mapper.php:222
+#: includes/shortcodes/shortcodes-mapper.php:262
+msgid "Title text."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:79
+msgid "Select Posts Quantity"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:81
+msgid "How many posts to show in posts box"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:86
+msgid "Select Posts Category"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:88
+msgid ""
+"You sould create some categorise & asosiate them with posts before you can "
+"use this option."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:93
+#: includes/shortcodes/shortcodes-mapper.php:195
+#: includes/shortcodes/shortcodes-mapper.php:235
+#: includes/shortcodes/shortcodes-mapper.php:465
+#: includes/shortcodes/shortcodes-mapper.php:547
+#: includes/shortcodes/shortcodes-mapper.php:657
+#: includes/shortcodes/shortcodes-mapper.php:773
+msgid "Css"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:95
+#: includes/shortcodes/shortcodes-mapper.php:197
+#: includes/shortcodes/shortcodes-mapper.php:237
+#: includes/shortcodes/shortcodes-mapper.php:467
+#: includes/shortcodes/shortcodes-mapper.php:549
+#: includes/shortcodes/shortcodes-mapper.php:659
+#: includes/shortcodes/shortcodes-mapper.php:775
+msgid "Design options"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:109
+#: includes/widgets/widget-contact-form.php:12
+msgid "Contact Form"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:115
+msgid "Contact form for your site."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:121
+msgid "Email will be sent to "
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:121
+#: includes/widgets/widget-contact-form.php:86
+msgid "and other addresses that you have chosen."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:121
+msgid "Change email(s)"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:131
+msgid "Twitter Feed"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:137
+msgid "Twitter Feed with last tweets."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:147
+msgid "Twitter Username"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:149
+msgid "Ex: @envato, Ph0enixTeam"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:153
+msgid "Tweets to Show"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:155
+msgid "Select how many tweets to show."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:161
+msgid "Layout"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:163
+msgid "Select Twitter Feed layout."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:166
+msgid "Box"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:167
+msgid "Slider"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:179
+#: includes/shortcodes/shortcodes-mapper.php:188
+msgid "Promo Title"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:209
+msgid "Portfolio Carousel"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:213
+msgid "Portfolio items in grid view"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:228
+msgid "Items per page"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:231
+msgid ""
+"How many items do you want to see in this block. Select \"-1\" to show all "
+"of them."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:249
+msgid "Clients Carousel"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:253
+msgid "Animated carousel with images"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:266
+msgid "Images"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:269
+msgid "Select images from media library."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:276
+msgid "Use autoscroll?"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:277
+msgid "The carousel will scrolls automatically."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:290
+msgid "Interesting Facts"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:294
+msgid "Some interesting facts with icons"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:298
+msgid "Icon"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:301
+msgid "mobile"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:302
+msgid "laptop"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:303
+msgid "desktop"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:304
+msgid "tablet"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:305
+#: includes/shortcodes/shortcodes-mapper.php:689
+msgid "Phone"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:306
+msgid "Document"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:307
+msgid "documents"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:308
+msgid "search"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:309
+msgid "clipboard"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:310
+msgid "newspaper"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:311
+msgid "notebook"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:312
+msgid "book-open"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:313
+msgid "browser"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:314
+msgid "calendar"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:315
+msgid "presentation"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:316
+msgid "picture"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:317
+msgid "pictures"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:318
+msgid "video"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:319
+msgid "camera"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:320
+msgid "printer"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:321
+msgid "toolbox"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:322
+msgid "briefcase"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:323
+msgid "wallet"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:324
+msgid "gift"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:325
+msgid "bargraph"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:326
+msgid "grid"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:327
+msgid "expand"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:328
+msgid "focus"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:329
+msgid "adjustments"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:330
+msgid "ribbon"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:331
+msgid "hourglass"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:332
+msgid "lock"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:333
+msgid "megaphone"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:334
+msgid "shield"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:335
+msgid "trophy"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:336
+msgid "flag"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:337
+msgid "map"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:338
+msgid "puzzle"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:339
+msgid "basket"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:340
+msgid "envelope"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:341
+msgid "streetsign"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:342
+msgid "telescope"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:343
+msgid "gears"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:344
+msgid "key"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:345
+msgid "paperclip"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:346
+msgid "attachment"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:347
+msgid "pricetags"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:348
+msgid "lightbulb"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:349
+msgid "layers"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:350
+msgid "pencil"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:351
+msgid "tools"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:352
+msgid "tools-2"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:353
+msgid "scissors"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:354
+msgid "paintbrush"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:355
+msgid "magnifying-glass"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:356
+msgid "circle-compass"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:357
+msgid "linegraph"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:358
+msgid "mic"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:359
+msgid "strategy"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:360
+msgid "beaker"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:361
+msgid "caution"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:362
+msgid "recycle"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:363
+msgid "anchor"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:364
+msgid "profile-male"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:365
+msgid "profile-female"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:366
+msgid "bike"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:367
+msgid "wine"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:368
+msgid "hotairballoon"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:369
+msgid "globe"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:370
+msgid "genius"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:371
+msgid "map-pin"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:372
+msgid "dial"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:373
+msgid "chat"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:374
+msgid "heart"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:375
+msgid "cloud"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:376
+msgid "upload"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:377
+msgid "download"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:378
+msgid "target"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:379
+msgid "hazardous"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:380
+msgid "piechart"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:381
+msgid "speedometer"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:382
+msgid "global"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:383
+msgid "compass"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:384
+msgid "lifesaver"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:385
+msgid "clock"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:386
+msgid "aperture"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:387
+msgid "quote"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:388
+msgid "scope"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:389
+msgid "alarmclock"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:390
+msgid "refresh"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:391
+msgid "happy"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:392
+msgid "sad"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:393
+msgid "facebook"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:394
+msgid "twitter"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:395
+msgid "googleplus"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:396
+msgid "rss"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:397
+msgid "tumblr"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:398
+msgid "linkedin"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:399
+msgid "dribbble"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:401
+msgid "Select icon."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:408
+msgid "Data"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:417
+#: single-grandway_portfolio.php:162 single-grandway_portfolio.php:197
+msgid "Description"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:426
+msgid "Style"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:429
+msgid "Default"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:430
+msgid "Digits"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:432
+msgid "The style of shortcode"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:438
+#: includes/shortcodes/shortcodes-mapper.php:531
+msgid "Link"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:445
+msgid "Where to put link?"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:448
+msgid "To icon"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:449
+msgid "To data"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:450
+msgid "To description"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:459
+#: includes/shortcodes/shortcodes-mapper.php:541
+msgid "Open this link in another tab?"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:494
+msgid "You sould create some services before you can use this widget"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:498
+msgid "Service"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:507
+msgid "Service Title"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:509
+msgid "Leave it blank to use your predefined service title."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:513
+msgid "Select Servise"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:515
+msgid "You sould create some services before you can use this widget."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:520
+msgid "Servise Layout"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:523
+msgid "Block"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:524
+msgid "List"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:631
+msgid "You sould create some team members before you can use this widget"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:635
+msgid "Team Member"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:644
+msgid "Team Member name"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:646
+msgid "Leave it blank to use your predefined name."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:650
+msgid "Select Team Member"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:652
+msgid "You sould create some team members before you can use this widget."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:671
+msgid "Get In Touch"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:680
+msgid "Adress"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:683
+msgid "Ex: \"Address: 455 Martinson, Los Angeles\""
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:692
+msgid "Ex: \"Phone: 8 (043) 567 - 89 - 30\""
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:698
+msgid "Fax"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:701
+msgid "Ex: \"Fax: 8 (057) 149 - 24 - 64\""
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:707
+msgid "Skype"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:710
+msgid "Ex: \"Skype: companyname\""
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:716
+msgid "Email"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:719
+msgid ""
+"Your e-mail will be published with \"antispambot\" protection.<br/>Ex: "
+"\"E-mail: support@email.com\""
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:725
+msgid "Weekend"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:728
+msgid "Ex: \"Weekend: from 9 am to 6 pm\""
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:740
+msgid "Testimonial"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:746
+msgid "Displays all your testimonials."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:750
+msgid "Image"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:753
+msgid "Select image from media library."
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:757
+msgid "Autor name"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:762
+msgid "Autor position"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:764
+msgid "For Ex: Web Developer"
+msgstr ""
+
+#: includes/shortcodes/shortcodes-mapper.php:768
+msgid "Text"
+msgstr ""
+
+#: includes/widgets/sidebars.php:25
+msgid "Blog Sidebar"
+msgstr ""
+
+#: includes/widgets/sidebars.php:26
+msgid "This widgets area is used for blog pages by default."
+msgstr ""
+
+#: includes/widgets/sidebars.php:39
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: includes/widgets/sidebars.php:40
+msgid "This widgets area is used for woocommerce shop by default."
+msgstr ""
+
+#: includes/widgets/sidebars.php:54
+msgid "Footer Area 1"
+msgstr ""
+
+#: includes/widgets/sidebars.php:55 includes/widgets/sidebars.php:67
+#: includes/widgets/sidebars.php:79 includes/widgets/sidebars.php:93
+msgid "This widgets area is used in footer."
+msgstr ""
+
+#: includes/widgets/sidebars.php:66
+msgid "Footer Area 2"
+msgstr ""
+
+#: includes/widgets/sidebars.php:78
+msgid "Footer Area 3"
+msgstr ""
+
+#: includes/widgets/sidebars.php:92
+msgid "Footer Area 4"
+msgstr ""
+
+#: includes/widgets/sidebars.php:118
+msgid "This is your custom sidebar."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:13
+msgid "Contact Form Widget."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:20
+msgid "Sending..."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:21
+msgid "Fill all form fields please"
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:47
+msgid "Subject"
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:51
+msgid "Oh snap! Name field can't stay empty."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:52
+msgid "Oh snap! There was a mistake when writing a e-mail."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:53
+msgid "Oh snap! Subject field can't stay empty."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:57
+msgid "Message"
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:58
+msgid "Oh snap! This field can't stay empty."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:59
+msgid "Error. You message wasn't sent. Something wrong happen."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:60
+msgid "Well done! You message is successfully sent."
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:62
+msgid "Send message"
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:86
+msgid "Email will be sent on"
+msgstr ""
+
+#: includes/widgets/widget-contact-form.php:87
+msgid "Change"
+msgstr ""
+
+#: includes/widgets/widget-flickr.php:91
+msgid "Flickr Photos"
+msgstr ""
+
+#: includes/widgets/widget-flickr.php:100
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/widget-flickr.php:103
+msgid "Flickr ID:"
+msgstr ""
+
+#: includes/widgets/widget-flickr.php:106
+msgid "To get your Flickr ID use"
+msgstr ""
+
+#: includes/widgets/widget-flickr.php:108
+msgid "# of Images to Show:"
+msgstr ""
+
+#: includes/widgets/widget-get-in-touch.php:11
+msgid "This widget displays your contact information."
+msgstr ""
+
+#: includes/widgets/widget-get-in-touch.php:67
+msgid "Get in Touch"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:15
+msgid "Social Buttons Widget."
+msgstr ""
+
+#: includes/widgets/widget-twitter.php:13
+msgid "Show recent tweets."
+msgstr ""
+
+#: includes/widgets/widget-twitter.php:67
+msgid "There's no tweets in your feed..."
+msgstr ""
+
+#: includes/widgets/widget-twitter.php:78
+msgid "Authentication failed! Please check your Twitter app data."
+msgstr ""
+
+#: includes/widgets/widget-twitter.php:80
+msgid "There's no tweets there"
+msgstr ""
+
+#: includes/widgets/widget-twitter.php:116
+msgid "Twitter Username:"
+msgstr ""
+
+#: includes/widgets/widget-twitter.php:117
+msgid "Tweets to Show:"
+msgstr ""
+
+#: search.php:18
+msgid "Search results for"
+msgstr ""
+
+#: single-attachment.php:21
+msgid "Attachment"
+msgstr ""
+
+#: single-grandway_portfolio.php:81
+msgid "Date"
+msgstr ""
+
+#: single-grandway_portfolio.php:105 single-grandway_portfolio.php:107
+msgid "Client"
+msgstr ""
+
+#: single-grandway_portfolio.php:213
+msgid "Recent Works"
+msgstr ""
+
+#: single-grandway_portfolio.php:301
+msgid "Load Full Portfolio"
+msgstr ""
+
+#: tag.php:18
+msgid "Tag"
+msgstr ""
+
+#: template-portfolio.php:69
+msgid "All"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "GrandWay"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid ""
+"http://themeforest.net/item/grandway-fully-responsive-wordpress-theme/126051"
+"90"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Powerful WordPress theme designed in a clean and minimalistic style. This "
+"theme can be used for any type of website, business, corporate, portfolio, "
+"products, marketing, etc. GrandWay has been coded with love in PHP, HTML5, "
+"CSS3 and JavaScript. It is compatible with such premium plugins like "
+"WPBakery Visual Composer & Themepunch Slider Revolution, and it is supplied "
+"with them."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "PhoenixTeam"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themeforest.net/user/PhoenixTeam"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Home ?>"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- tpl Blog classic fullwidth --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- tpl Blog classic sidebar --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- tpl Blog medium fullwidth --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- tpl Blog medium sidebar --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- tpl Home Industrial --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- 2cols Portfolio --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- 3cols Portfolio --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- 4cols Portfolio --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- Fullwidth Portfolio --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- Portfolio Single Half --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- Portfolio Single Wide --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- tpl Blog Single Post fullwidth --"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "-- tpl Blog Single Post sidebar --"
+msgstr ""
+
+#: comments.php:26
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:1106
+#: includes/helpers/class-tgm-plugin-activation.php:2818
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:1871
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2225
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2270
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2361
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2481
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2485
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: includes/helpers/class-tgm-plugin-activation.php:2490
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""

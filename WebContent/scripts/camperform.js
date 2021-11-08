@@ -14,9 +14,9 @@ function validateSFormFields(form){
 		errormessage += "Please select a gender.<br>";
 	}
 
-	if(form.OnCampus.value === ""){
-		errormessage += "Please select if you want onCampus classes.<br>";
-	}
+	// if(form.OnCampus.value === ""){
+	// 	errormessage += "Please select if you want onCampus classes.<br>";
+	// }
 
 	if (form.birthdate.value === ""){
 		errormessage += "Please enter Date of Birth.<br>";

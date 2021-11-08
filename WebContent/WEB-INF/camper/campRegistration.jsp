@@ -235,6 +235,9 @@
                                 </c:when>
 
                                 <c:when test="${OnCampus eq false}">
+                                    <span>Reminder:</span><br>
+                                    <span style="text-decoration-line: underline">1. You are not allowed to select on-campus classes without submitting medical records</span><br>
+                                    <span style="text-decoration-line: underline">2. Please complete the medical form if your kid(s) wants to attend on-campus.</span>
                                     <c:forEach items="${eligibleCamp}" var="camp">
                                         <c:choose>
                                             <c:when test="${camp.getRemote() eq true}">
@@ -255,10 +258,10 @@
                                             </c:when>
                                             <c:otherwise>
                                                 <div class="class-entry ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-campID ="${camp.campOfferedID}" data-topic="${camp.campTopic}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}
-                                                     style="color: red">
-                                                    <span class="checkbox-space">
-                                                        <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
-                                                        <div class="class-checkbox"></div>
+                                                     style="pointer-events: none; text-decoration: line-through; color: grey">
+                                                    <span class="checkbox-space" >
+                                                        <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}" >
+                                                        <div class="class-checkbox" ></div>
                                                     </span>
                                                     <h7 class="camp-name">${camp.campLevel}</h7>
                                                     <h7 class="recommended-grade">${camp.campGradeFormatted}</h7>
