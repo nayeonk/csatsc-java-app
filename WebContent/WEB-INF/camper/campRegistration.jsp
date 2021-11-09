@@ -40,7 +40,7 @@
 
 
             <div class="filter margin-below">
-                <div class="topic-filter"  style="display: inline">
+                <div class="topic-filter"  style="display: flex">
                     <c:forEach items="${campTopics}" var="campTopic">
                         <a class="dropdown-item" href="#">
                             <div class="checkbox">
@@ -52,7 +52,7 @@
                     </c:forEach>
                 </div>
 
-                <div class="level-filter"  style="display: inline">
+                <div class="level-filter"  style="display: flex">
                     <c:forEach items="${campLevels}" var="campLevel">
                         <a class="dropdown-item" href="#">
                             <div class="checkbox">
@@ -205,14 +205,14 @@
                                 <h7 class="cost">Price</h7>
                             </div>
 
-                            <c:choose>
-                                <c:when test="${OnCampus eq true}">
-                                    <span>You are cleared to register all available camps.</span>
-                                </c:when>
-                                <c:otherwise>
-                                    <span>You can online register for online camps. Please fill in the camper's medical information.</span>
-                                </c:otherwise>
-                            </c:choose>
+<%--                            <c:choose>--%>
+<%--                                <c:when test="${OnCampus eq true}">--%>
+<%--                                    <span>You are cleared to register all available camps.</span>--%>
+<%--                                </c:when>--%>
+<%--                                <c:otherwise>--%>
+<%--                                    <span>You can online register for online camps. Please fill in the camper's medical information.</span>--%>
+<%--                                </c:otherwise>--%>
+<%--                            </c:choose>--%>
 
                             <c:choose>
                                 <c:when test="${OnCampus eq true}">
@@ -289,7 +289,9 @@
                                     <span>You are cleared to register all available camps.</span>
                                 </c:when>
                                 <c:otherwise>
-                                    <span>You can online register for online camps. Please fill in the camper's medical information.</span>
+                                    <span>Reminder:</span><br>
+                                    <span style="text-decoration-line: underline">1. You are not allowed to select on-campus classes without submitting medical records</span><br>
+                                    <span style="text-decoration-line: underline">2. Please complete the medical form if your kid(s) wants to attend on-campus.</span>
                                 </c:otherwise>
                             </c:choose>
 
@@ -345,9 +347,12 @@
                                         </div>
                                     </c:when>
                                     <c:otherwise>
+
                                         <c:choose>
                                             <c:when test="${camp.getRemote() eq true}">
-                                                <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
+
+                                                <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}
+                                                     style="pointer-events: none; text-decoration: line-through; color: grey">
                                                 <span class="checkbox-space">
                                                     <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
                                                     <div class="class-checkbox"></div>
@@ -396,7 +401,7 @@
                                             </c:when>
                                             <c:otherwise>
                                                 <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}
-                                                     style = "color:red">
+                                                     style="pointer-events: none; text-decoration: line-through; color: grey">
                                                 <span class="checkbox-space">
                                                     <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
                                                     <div class="class-checkbox"></div>
