@@ -41,10 +41,10 @@
                                 ${student == null ? 'greyed ' : ''}row">
                     <a href="/SummerCamp/applyforscholarship">Scholarship Application</a>
                 </div>
-<%--                <div class="${fn:contains(pageContext.request.requestURL, 'medical') ? 'selected ' : ''}--%>
-<%--                            ${student == null || student.getProgress() < 1 ? 'greyed ' : ''}row">--%>
-<%--                    <a href="/SummerCamp/medical">Medical Information</a>--%>
-<%--                </div>--%>
+                <div class="${fn:contains(pageContext.request.requestURL, 'medical') ? 'selected ' : ''}
+                            ${student == null || student.getProgress() < 1 ? 'greyed ' : ''}row">
+                    <a href="/SummerCamp/medical">Medical Information</a>
+                </div>
                 <div class="${fn:contains(pageContext.request.requestURL, 'Registration') ? 'selected ' : ''}
                             ${student == null || student.getProgress() < 2 ? 'greyed ' : ''}row">
                     <a href="/SummerCamp/campregistration">Apply for Camps</a>

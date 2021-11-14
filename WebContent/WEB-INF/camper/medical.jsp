@@ -62,6 +62,26 @@
 						</c:otherwise>
 					</c:choose>
 
+
+					<!-- OnCampus -->
+					<div class="customRow margin-below">
+						<div id="OnCampus-div">
+							<div class="customRow center-vertical">
+								<c:choose>
+									<c:when test="${OnCampus eq true}">
+										<br />
+										<span> You may now register all available camps. </span>
+									</c:when>
+
+									<c:when test="${OnCampus eq false}">
+										<br />
+										<span> It's mandatory for campers to complete this form before being able to register for on-campus camps. </span>
+									</c:when>
+								</c:choose>
+							</div>
+						</div>
+					</div>
+
 					<!-- Student Information -->
 					<h3 class="full-line">Student Information</h3>
 
