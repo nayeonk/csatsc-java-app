@@ -14,9 +14,9 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/SummerCamp/css/general.css">
-    <link rel="stylesheet" type="text/css" href="/SummerCamp/css/studentNavbar.css">
-    <link rel="stylesheet" type="text/css" href="/SummerCamp/css/mycamps.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/general.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/camperstyle.css">
+<%--    <link rel="stylesheet" type="text/css" href="/SummerCamp/css/mycamps.css">--%>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <title>My Camps</title>

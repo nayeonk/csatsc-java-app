@@ -13,9 +13,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="/SummerCamp/css/general.css">
-    <link rel="stylesheet" type="text/css" href="/SummerCamp/css/studentNavbar.css">
-    <link rel="stylesheet" type="text/css" href="/SummerCamp/css/camperProfile.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/camperstyle.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/general.css">
 
     <!-- JavaScript files -->
     <script src="/SummerCamp/scripts/camperProfile.js"></script>

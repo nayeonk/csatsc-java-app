@@ -10,9 +10,9 @@
 		<title>CS@SC</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/general.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/studentNavbar.css">
-		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/medicalForm.css" />
+<%--		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/general.css">--%>
+<%--		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/studentNavbar.css">--%>
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/camperstyle.css" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

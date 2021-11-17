@@ -11,9 +11,9 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/SummerCamp/css/general.css">
-    <link rel="stylesheet" href="/SummerCamp/css/studentNavbar.css">
-    <link rel="stylesheet" href="/SummerCamp/css/campRegistration.css">
+<%--    <link rel="stylesheet" href="${pageContext.request.contextPath}/SummerCamp/css/general.css">--%>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/camperstyle.css">
+<%--    <link rel="stylesheet" href="${pageContext.request.contextPath}/SummerCamp/css/campRegistration.css">--%>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 
@@ -33,8 +33,10 @@
         <div class="d-none d-sm-block">
             <h1 class="d-none d-sm-block">Apply for Camps</h1>
             <h5 class="username d-none d-sm-block">${student.firstName} ${student.lastName}</h5>
-            <p class="changes-note">Note: selections you make on this page will not be saved until you click
+            <h5>Notes:</h5>
+            <p class="changes-note">Selections you make on this page will not be saved until you click
                 <i>Confirm</i>.</p>
+            <p class="changes-note">Classes are subject to cancellation if minimum enrollment is not met.</p>
 
             <h5>Filter By...</h5>
 
