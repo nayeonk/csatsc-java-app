@@ -44,7 +44,8 @@ public class SQLStatements {
 //
 //    );
 
-    static final String databaseConnectionString = "jdbc:mysql://localhost:3306/summercamps?user=csatsc_admin&password=aStA7kOO9@iVsZ0/&serverTimezone=America/Los_Angeles";
+    //static final String databaseConnectionString = "jdbc:mysql://localhost:3306/summercamps?user=csatsc_admin&password=aStA7kOO9@iVsZ0/&serverTimezone=America/Los_Angeles";
+    static final String databaseConnectionString = "jdbc:mysql://localhost:3306/summercamps?user=root&password=password&serverTimezone=America/Los_Angeles";
 
 
     static final String getNamesFromClassID = "SELECT fname, lname, Student.studentID FROM Student "

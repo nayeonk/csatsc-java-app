@@ -129,7 +129,7 @@ public class CreateStudent extends HttpServlet {
                 request.getRequestDispatcher("/WEB-INF/camper/camperProfile.jsp").forward(request, response);
             } else {
                 errorMessage = createStudent(request);
-
+//                System.out.println("here");
                 // if error creating student
                 if (errorMessage.length() > 0) {
                     repopulateAttributes(request);
@@ -232,6 +232,18 @@ public class CreateStudent extends HttpServlet {
             error += "Please tell us if your child has dietary restrictions or medical issues.<br>";
         }
 
+        /*String OnCampus = request.getParameter("OnCampus");
+        if (OnCampus.isEmpty()) {
+            error += "Please tell us if your child want to attend camps on campus.<br>";
+        }
+        else if(OnCampus == "yes") {
+            if(request.getParameter("Medical") == "no") {
+                error += "Please fill in the medical form if your child want to attend on campus.";
+            }
+        }
+        else {
+            error += OnCampus;
+        }*/
 
         return error;
     }

@@ -40,6 +40,7 @@ public class ManageCampers extends HttpServlet {
             int studentID = Integer.parseInt(request.getParameter("studentID"));
             request = SetPageAttributeUtil.setCamperAttributes(request, studentID);
             request.getSession().setAttribute("isUpdate", "yes");
+
             request.getRequestDispatcher("/mycamps").forward(request, response);
         } else {
             // add new camper
@@ -50,6 +51,8 @@ public class ManageCampers extends HttpServlet {
 
             request.getSession().setAttribute("isUpdate", "no");
             request.getSession().setAttribute(StringConstants.STUDENT, null);
+            //default new campers' oncampus status to false
+            request.getSession().setAttribute("OnCampus", false);
             request.getRequestDispatcher("/WEB-INF/camper/camperProfile.jsp").forward(request, response);
         }
     }

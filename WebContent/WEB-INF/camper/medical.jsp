@@ -11,8 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/general.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/studentNavbar.css">
-		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/medicalForm.css" />
+<%--		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/studentNavbar.css">--%>
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/camperstyle.css" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -61,6 +61,26 @@
 							</div>
 						</c:otherwise>
 					</c:choose>
+
+
+					<!-- OnCampus -->
+					<div class="customRow margin-below">
+						<div id="OnCampus-div">
+							<div class="customRow center-vertical">
+								<c:choose>
+									<c:when test="${OnCampus eq true}">
+										<br />
+										<span> You may now register all available camps. </span>
+									</c:when>
+
+									<c:when test="${OnCampus eq false}">
+										<br />
+										<span> It's mandatory for campers to complete this form before being able to register for on-campus camps. </span>
+									</c:when>
+								</c:choose>
+							</div>
+						</div>
+					</div>
 
 					<!-- Student Information -->
 					<h3 class="full-line">Student Information</h3>

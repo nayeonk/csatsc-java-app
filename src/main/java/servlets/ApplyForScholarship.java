@@ -75,8 +75,8 @@ public class ApplyForScholarship extends HttpServlet {
             DatabaseUpdates.updateStudentProgress(studentID, 2);
         }
 
-//        response.sendRedirect("/SummerCamp/medical");
-        response.sendRedirect("/SummerCamp/campregistration");
+        response.sendRedirect("/SummerCamp/medical");
+        //response.sendRedirect("/SummerCamp/campregistration");
     }
 
     // used when trying to save scholarship application

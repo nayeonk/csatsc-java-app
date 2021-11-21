@@ -1,0 +1,577 @@
+/* general.css */
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#page {
+    display: flex;
+    width: 100%;
+    margin-top: 94px;
+}
+
+#main {
+    padding: 50px;
+    width: 100%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #page {
+        display: block;
+    }
+    #main {
+        padding: 25px;
+    }
+}
+
+input[type=text] {
+    border: none;
+    background-color: #ededed;
+    padding: 5px;
+    padding-left: 8px;
+}
+
+.submit-row {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    /*justify-content: flex-end;*/
+}
+
+.submit-row button {
+    /*margin-left: 20px;*/
+}
+
+.divider {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;
+    background-color:rgba(0,0,0,.1);
+    height: 1px;
+    margin: 30px auto 30px auto;
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border: 0px;
+    height: 94px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border: 0px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    #page {
+        margin-top: 0px;
+    }
+}
+/* parentNavbar.css */
+.sidebar {
+    color: #fafafa;
+    display: inline-block;
+    width: 200px;
+
+    padding: 36px;
+    background-color: #960e0e;
+    font-family: 'DM Sans';
+
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 94px;
+}
+
+.sidebar-space {
+    width: 200px;
+    padding: 36px;
+    overflow-x: hidden;
+    flex: 0 0 200px;
+}
+
+.sidebar .row a {
+    text-decoration: none;
+    color: #fafafa;
+    line-height: 1.2;
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar .row a:hover {
+    opacity: 0.8;
+}
+
+.adminRow a {
+    opacity: 1 !important;
+}
+
+.row a {
+    opacity: 0.5;
+}
+
+.sidebar #user {
+    color: #fafafa;
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 1;
+}
+
+
+.selected a {
+    opacity: 1;
+}
+
+.selected {
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+}
+
+.selected a:hover {
+    opacity: 1;
+}
+
+.back-arrow a {
+    padding: 0;
+}
+
+.material-icons.md-48 {
+    font-size: 40px;
+}
+
+.material-icons.md-24 {
+    font-size: 30px;
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.hamburger-icon {
+    color: #fafafa;
+}
+
+.desktop-nav-container {
+    height: 100%;
+    padding-top: 50px;
+}
+
+.desktop-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#logout {
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        position: static;
+    }
+
+    .sidebar a {
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .sidebar a:hover {
+        opacity: 1;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 100px;
+    }
+
+    .navbar-header {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 10px;
+    }
+
+    .selected {
+        border: none;
+        text-decoration: underline;
+    }
+
+    .sidebar .row {
+        padding-left: 25px;
+    }
+
+    .sidebar .row a {
+        font-size: 20px;
+        opacity: 1;
+    }
+    .mobile-logo {
+        width: 40%;
+    }
+    .mobile-logo img {
+        width: 100%;
+    }
+}
+
+/* managecampers.css */
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+#header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+#add-campers {
+    background-color: #C4C4C4;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#campers-content {
+    padding-top: 20px;
+}
+
+.campers-entry {
+    /*padding: 8px;*/
+
+    /*background-color: #ffc107;*/
+    /*border-radius: 10px;*/
+    /*cursor: pointer;*/
+}
+
+.campers-entry:hover {
+    /*background-color: #FFBFBF;*/
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 600px;
+}
+
+.closeRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.text-input {
+    width: 45%;
+    border: none;
+    padding: 12px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black;
+}
+
+.submit-row {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    border: none;
+    background-color: #C4C4C4;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #add-camper {
+        padding: 0;
+    }
+}
+
+/* Camper Applications */
+
+#camper-applications-header {
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+
+.camper-container {
+    margin-bottom: 20px;
+}
+
+/* parentregistration.css */
+
+body {
+    /*font: DM Sans;*/
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.full-line {
+    width: 100%;
+}
+
+.margin-below {
+    margin-bottom: 15px;
+}
+
+.customRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-row input, .phone input, .country input, #city, .email input {
+    width: 100%;
+}
+
+.first-name {
+    width: 40%;
+    margin-right: 2%;
+    max-width: 200px;
+}
+
+.last-name {
+    width: 41%;
+    max-width: 200px;
+}
+
+.city {
+    width: 40%;
+    margin-right: 4%;
+    max-width: 200px;
+}
+
+.phone, .country, .email {
+    width: 40%;
+    max-width: 200px;
+}
+
+#street {
+    width: 100%;
+    max-width: 500px;
+}
+
+.state {
+    width: 15%;
+    margin-right: 2%;
+    max-width: 250px;
+}
+
+.zip {
+    width: 41%;
+    max-width: 200px;
+}
+
+#income {
+    width: 100%;
+    max-width: 500px;
+}
+
+.submitRow button {
+    margin-left: 15px;
+}
+
+.required::after {
+    content: "*";
+    color: #ff0000;
+}
+
+@media (max-width: 768px) {
+    #logout {
+        float: right;
+        margin-top: 24px;
+        margin-right: 24px;
+    }
+
+    .full-line {
+        width: 100%;
+    }
+
+    .margin-below {
+        margin-bottom: 15px;
+    }
+
+    .customRow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .name-row input {
+        width: 100%;
+    }
+
+    .first-name {
+        width: 40%;
+        margin-right: 2%;
+        max-width: 200px;
+    }
+
+    .last-name {
+        width: 41%;
+        max-width: 200px;
+    }
+
+    .phone, .country {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        max-width: 200px;
+    }
+
+    .smargin-below {
+        margin-bottom: 10px;
+    }
+
+    input[type=text].half-line {
+        width: 40%;
+        margin-right: 5px;
+    }
+
+    input[type=text].third-line {
+        width: 29%;
+        margin-right: 3%;
+    }
+
+    .submitRow button {
+        margin-left: 15px;
+    }
+}
+
+/* portal.css */
+#logout {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    /*top: 30px;*/
+    /*right: 30px;*/
+}
+
+#main {
+    font-family: 'DM Sans';
+}
+
+#main h1 {
+    /*margin-top: 20px;*/
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.step {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.step:hover {
+    text-decoration: underline;
+}
+
+.circle {
+    border-radius: 100px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    margin-right: 15px;
+}
+
+.card {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .step {
+        padding: 0;
+    }
+}
