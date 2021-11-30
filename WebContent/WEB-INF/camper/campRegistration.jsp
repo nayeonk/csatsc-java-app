@@ -11,9 +11,9 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<%--    <link rel="stylesheet" href="${pageContext.request.contextPath}/SummerCamp/css/general.css">--%>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/camperstyle.css">
-<%--    <link rel="stylesheet" href="${pageContext.request.contextPath}/SummerCamp/css/campRegistration.css">--%>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/general.css">
+    <link rel="stylesheet" href="/SummerCamp/css/studentNavbar.css">
+    <link rel="stylesheet" href="/SummerCamp/css/campRegistration.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 
@@ -33,10 +33,8 @@
         <div class="d-none d-sm-block">
             <h1 class="d-none d-sm-block">Apply for Camps</h1>
             <h5 class="username d-none d-sm-block">${student.firstName} ${student.lastName}</h5>
-            <h5>Notes:</h5>
-            <p class="changes-note">Selections you make on this page will not be saved until you click
+            <p class="changes-note">Note: selections you make on this page will not be saved until you click
                 <i>Confirm</i>.</p>
-            <p class="changes-note">Classes are subject to cancellation if minimum enrollment is not met.</p>
 
             <h5>Filter By...</h5>
 
@@ -224,18 +222,6 @@
 											<input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
 											<div class="class-checkbox"></div>
 										</span>
-                                    <h7 class="camp-name">${camp.campLevel}</h7>
-                                    <h7 class="recommended-grade">${camp.campGradeFormatted}</h7>
-                                    <h7 class="online">${camp.remoteString}</h7>
-                                    <h7 class="date">${camp.campStartWeek}-${camp.campEndWeek}</h7>
-                                    <h7 class="days">${camp.getCampDays()}</h7>
-                                    <h7 class="time">${camp.campTime}</h7>
-                                    <h7 class="capacity ${camp.getFull() ? "text-danger" : ""}"> ${camp.getCampConfirmed()} of ${camp.getCampCapacity()}</h7>
-                                    <h7 class="cost">
-                                        <c:choose><c:when test="${parent.getUSCEmployee()}"><s>${camp.price}</s> ${camp.employeePrice}</c:when><c:otherwise>${camp.price}</c:otherwise></c:choose>
-                                    </h7>
-                                </div>
-                            </c:forEach>
                                             <h7 class="camp-name">${camp.campLevel}</h7>
                                             <h7 class="recommended-grade">${camp.campGradeFormatted}</h7>
                                             <h7 class="online">${camp.remoteString}</h7>
