@@ -54,25 +54,25 @@ img.emoji {
 <link rel="stylesheet" href="lib/fancybox/source/jquery.fancybox.css" />
 <!-- end backend styles -->
 
-<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3' type='text/css' media='all' />
-<link rel='stylesheet' id='bwg_frontend-css'  href='wp-content/plugins/photo-gallery/css/bwg_frontend.css?ver=1.2.70' type='text/css' media='all' />
-<link rel='stylesheet' id='bwg_font-awesome-css'  href='wp-content/plugins/photo-gallery/css/font-awesome/font-awesome.css?ver=4.2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='bwg_mCustomScrollbar-css'  href='wp-content/plugins/photo-gallery/css/jquery.mCustomScrollbar.css?ver=1.2.70' type='text/css' media='all' />
-<link rel='stylesheet' id='rs-plugin-settings-css'  href='wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_frontend-css'  href='/wp-content/plugins/photo-gallery/css/bwg_frontend.css?ver=1.2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_font-awesome-css'  href='/wp-content/plugins/photo-gallery/css/font-awesome/font-awesome.css?ver=4.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_mCustomScrollbar-css'  href='/wp-content/plugins/photo-gallery/css/jquery.mCustomScrollbar.css?ver=1.2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.8' type='text/css' media='all' />
 <style id='rs-plugin-settings-inline-css' type='text/css'>
 #rs-demo-id {}
 </style>
-<link rel='stylesheet' id='grandway-bootstrap-css'  href='wp-content/themes/grandway/assets/css/bootstrap.min.css?ver=3.2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-cubeportfolio-css'  href='wp-content/themes/grandway/assets/css/cubeportfolio-3.min.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-jcarousel-css'  href='wp-content/themes/grandway/assets/css/jcarousel.responsive.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-owl-carousel-css'  href='wp-content/themes/grandway/assets/css/owl.carousel.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-fontawesome-css'  href='wp-content/themes/grandway/assets/css/font-awesome.min.css?ver=4.1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-et-line-css'  href='wp-content/themes/grandway/assets/css/et-line.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-bxslider-css'  href='wp-content/themes/grandway/assets/css/jquery.bxslider.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-testimonialrotator-css'  href='wp-content/themes/grandway/assets/css/testimonialrotator.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-magnific-css'  href='wp-content/themes/grandway/assets/css/magnific.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-main-css'  href='wp-content/themes/grandway/style.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='grandway-responsive-css'  href='wp-content/themes/grandway/assets/css/responsive.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-bootstrap-css'  href='/wp-content/themes/grandway/assets/css/bootstrap.min.css?ver=3.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-cubeportfolio-css'  href='/wp-content/themes/grandway/assets/css/cubeportfolio-3.min.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-jcarousel-css'  href='/wp-content/themes/grandway/assets/css/jcarousel.responsive.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-owl-carousel-css'  href='/wp-content/themes/grandway/assets/css/owl.carousel.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-fontawesome-css'  href='/wp-content/themes/grandway/assets/css/font-awesome.min.css?ver=4.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-et-line-css'  href='/wp-content/themes/grandway/assets/css/et-line.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-bxslider-css'  href='/wp-content/themes/grandway/assets/css/jquery.bxslider.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-testimonialrotator-css'  href='/wp-content/themes/grandway/assets/css/testimonialrotator.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-magnific-css'  href='/wp-content/themes/grandway/assets/css/magnific.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-main-css'  href='/wp-content/themes/grandway/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='grandway-responsive-css'  href='/wp-content/themes/grandway/assets/css/responsive.css?ver=1.0' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-add-custom-css-css'  href='//summercamps.usc.edu?display_custom_css=css&#038;ver=4.3.1' type='text/css' media='all' />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -91,20 +91,20 @@ var PhoenixTeam = {"THEME_SLUG":"grandway","ajaxUrl":"http:\/\/68.181.97.192\/wo
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="scripts/jquery1.7.2.js"></script>
     <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-    <script type='text/javascript' src='wp-content/plugins/photo-gallery/js/bwg_frontend.js?ver=1.2.70'></script>
-    <script type='text/javascript' src='wp-content/plugins/photo-gallery/js/jquery.mobile.js?ver=1.2.70'></script>
-    <script type='text/javascript' src='wp-content/plugins/photo-gallery/js/jquery.mCustomScrollbar.concat.min.js?ver=1.2.70'></script>
-    <script type='text/javascript' src='wp-content/plugins/photo-gallery/js/jquery.fullscreen-0.4.1.js?ver=0.4.1'></script>
+    <script type='text/javascript' src='/wp-content/plugins/photo-gallery/js/bwg_frontend.js?ver=1.2.70'></script>
+    <script type='text/javascript' src='/wp-content/plugins/photo-gallery/js/jquery.mobile.js?ver=1.2.70'></script>
+    <script type='text/javascript' src='/wp-content/plugins/photo-gallery/js/jquery.mCustomScrollbar.concat.min.js?ver=1.2.70'></script>
+    <script type='text/javascript' src='/wp-content/plugins/photo-gallery/js/jquery.fullscreen-0.4.1.js?ver=0.4.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var bwg_objectL10n = {"bwg_field_required":"field is required.","bwg_mail_validation":"This is not a valid email address.","bwg_search_result":"There are no images matching your search."};
 /* ]]> */
 </script>
-<script type='text/javascript' src='wp-content/plugins/photo-gallery/js/bwg_gallery_box.js?ver=1.2.70'></script>
-<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.0.8'></script>
-<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.8'></script>
-<script type='text/javascript' src='wp-content/themes/grandway/assets/js/modernizr.custom.js?ver=1.0.0'></script>
-<script type='text/javascript' src='wp-content/themes/grandway/assets/customjs/tabcontrol.js?ver=4.3.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/photo-gallery/js/bwg_gallery_box.js?ver=1.2.70'></script>
+<script type='text/javascript' src='/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.0.8'></script>
+<script type='text/javascript' src='/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.8'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/modernizr.custom.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/customjs/tabcontrol.js?ver=4.3.1'></script>
 
 <!-- backend scripts -->
 <script src="scripts/admin-control-panel.js"></script>
@@ -112,7 +112,7 @@ var bwg_objectL10n = {"bwg_field_required":"field is required.","bwg_mail_valida
 <!-- end backend scripts -->
 
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 4.3.1" />
 <link rel='canonical' href='/' />
 <link rel='shortlink' href='/' />

@@ -351,8 +351,7 @@
                                         <c:choose>
                                             <c:when test="${camp.getRemote() eq true}">
 
-                                                <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}
-                                                     style="pointer-events: none; text-decoration: line-through; color: grey">
+                                                <div class="class-entry mobile ${(camp.isApplied() || camp.getFull()) ? 'applied' : ''}" data-level="${camp.campLevel}" data-topic="${camp.campTopic}" data-campID ="${camp.campOfferedID}" ${camp.getFull() ? "data-toggle='modal' data-target='#full-modal'" : ""}>
                                                 <span class="checkbox-space">
                                                     <input type="hidden" name="checkbox" value="0 ${camp.campOfferedID}">
                                                     <div class="class-checkbox"></div>

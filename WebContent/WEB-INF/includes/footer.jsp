@@ -74,32 +74,32 @@
 </div>
 <!-- /wrapper -->
 
-<script type='text/javascript' src=wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var _wpcf7 = {"loaderUrl":"http:\/\/68.181.97.192\/wordpress\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
 /* ]]> */
 </script>
-<script type='text/javascript' src=wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/sticky-be.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/bootstrap.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/jquery.bxslider.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/retina.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/jquery.cycle.all.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/sticky-be.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/bootstrap.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/jquery.bxslider.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/retina.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/jquery.cycle.all.js?ver=1.0.0'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var ajax_var = {"url":"http:\/\/68.181.97.192\/wordpress\/wp-admin\/admin-ajax.php","nonce":"06cd892ae2"};
 /* ]]> */
 </script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/likes.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/jquery.cubeportfolio.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/jcarousel.responsive.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/jquery.jcarousel.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/owl.carousel.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/magnific.popup.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/testimonialrotator.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/contacts.js?ver=1.0.0'></script>
-<script type='text/javascript' src=wp-content/themes/grandway/assets/js/main.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/likes.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/jquery.cubeportfolio.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/jcarousel.responsive.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/jquery.jcarousel.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/owl.carousel.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/magnific.popup.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/testimonialrotator.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/contacts.js?ver=1.0.0'></script>
+<script type='text/javascript' src='/wp-content/themes/grandway/assets/js/main.js?ver=1.0.0'></script>
 
     </body>
 </html>

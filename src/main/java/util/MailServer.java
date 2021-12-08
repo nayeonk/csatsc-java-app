@@ -129,27 +129,36 @@ public class MailServer {
      * @throws MessagingException if the message is invalid
      */
     private static boolean shouldTransportMessage(Message message) throws MessagingException {
-        if (System.getenv(EnvironmentConstants.ENV).equals(EnvironmentConstants.ENV_PRODUCTION)) {
-            return true;
-        } else if (System.getenv(EnvironmentConstants.ENV).equals(EnvironmentConstants.ENV_DEVELOPMENT)) {
-            String[] allowedDevEmails = System.getenv(EnvironmentConstants.ALLOWED_DEV_EMAILS).split(",");
-            List<String> recipientIntersection = Arrays
-                    .stream(message.getAllRecipients())
-                    .map(Objects::toString)
-                    .filter(Arrays.asList(allowedDevEmails)::contains)
-                    .collect(Collectors.toList());
+        try
+        {
+            if (System.getenv(EnvironmentConstants.ENV).equals(EnvironmentConstants.ENV_PRODUCTION)) {
+                return true;
+            } else if (System.getenv(EnvironmentConstants.ENV).equals(EnvironmentConstants.ENV_DEVELOPMENT)) {
+                String[] allowedDevEmails = System.getenv(EnvironmentConstants.ALLOWED_DEV_EMAILS).split(",");
+                List<String> recipientIntersection = Arrays
+                        .stream(message.getAllRecipients())
+                        .map(Objects::toString)
+                        .filter(Arrays.asList(allowedDevEmails)::contains)
+                        .collect(Collectors.toList());
 
-            return recipientIntersection.size() > 0;
-        } else {
-            throw new Error(
-                    String.format(
-                            "Environment variable '%s' must be set to either '%s' or '%s'",
-                            EnvironmentConstants.ENV,
-                            EnvironmentConstants.ENV_PRODUCTION,
-                            EnvironmentConstants.ENV_DEVELOPMENT
-                    )
-            );
+                return recipientIntersection.size() > 0;
+            } else {
+                throw new Error(
+                        String.format(
+                                "Environment variable '%s' must be set to either '%s' or '%s'",
+                                EnvironmentConstants.ENV,
+                                EnvironmentConstants.ENV_PRODUCTION,
+                                EnvironmentConstants.ENV_DEVELOPMENT
+                        )
+                );
+            }
         }
+        catch (Exception e)
+        {
+
+        }
+
+        return false;
     }
 
     private static Message buildMessage(String emailTo, String subject, ServletContext servletContext) throws MessagingException {
