@@ -15,8 +15,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Stack;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.ParseException;
 
 @MultipartConfig
 public class CreateStudent extends HttpServlet {
@@ -119,7 +124,11 @@ public class CreateStudent extends HttpServlet {
             request.setAttribute("errorMessage", errorMessage);
             request.getRequestDispatcher("/register.jsp").forward(request, response);
         } else {
-            errorMessage = validateForm(request);
+            try {
+                errorMessage = validateForm(request);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
 
             // if erroneous submission, redirect to camperprofile
             if (errorMessage.length() > 0) {
@@ -175,7 +184,7 @@ public class CreateStudent extends HttpServlet {
         SetPageAttributeUtil.setMultiChoiceFields(request);
     }
 
-    private String validateForm(HttpServletRequest request) {
+    private String validateForm(HttpServletRequest request) throws ParseException {
         String error = "";
 
         String firstName = request.getParameter("s_fname");
@@ -196,6 +205,16 @@ public class CreateStudent extends HttpServlet {
         String dateOfBirth = request.getParameter("birthdate");;
         if (dateOfBirth.isEmpty()) {
             error += "Please enter Date of Birth.<br>";
+        }
+        else {
+            try{
+                SimpleDateFormat df = new SimpleDateFormat("YYYY-MM-DD");
+                df.setLenient(false);
+                df.parse(request.getParameter("birthdate"));
+            }
+            catch (ParseException e){
+                error += "Please enter Date of Birth in correct format.<br>";
+            }
         }
 
         String[] ethnicityIDs = request.getParameterValues("ethnicity");
