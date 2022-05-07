@@ -4,6 +4,7 @@ import data.Email;
 import database.DatabaseQueries;
 
 import enums.EmailType;
+import model.AwsSecret;
 import util.EmailConstants;
 
 import javax.mail.*;
@@ -23,8 +24,7 @@ import java.util.stream.Collectors;
 public class MailServer {
     private static final String messageOpenTags = "<html><body><div style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 200; max-width:600px; padding:20px;\">";
     private static final String messageCloseTags = "<br><p style=\"font-size: 16px;\"><strong>Jeffrey Miller, Ph.D.</strong><br>Associate Professor of Engineering Practice<br>Department of Computer Science<br>CS@SC Summer Camps Director<br>http://summercamp.usc.edu<br><br>USC Viterbi School of Engineering<br>University of Southern California<br>941 Bloom Walk, SAL 342<br>Los Angeles, California 90089-0781<br>jeffrey.miller@usc.edu<br>213-740-7129 (office)</p></div></body></html>";
-    private static final String username = "cscamps@usc.edu";
-    private static final String password = "CS@SC-213-dont-forget-to-flush";
+
     private static Session session;
 
     public static String getPassword(ServletContext servletContext) {
@@ -43,10 +43,11 @@ public class MailServer {
 
     private static Session getSession(ServletContext servletContext) {
         if (MailServer.session == null) {
+            AwsSecret secret = AwsSecretManagerUtil.fetch();
             MailServer.session = Session.getInstance(defaultProperties(),
                     new javax.mail.Authenticator() {
                         protected PasswordAuthentication getPasswordAuthentication() {
-                            return new PasswordAuthentication(username, password);
+                            return new PasswordAuthentication(secret.getEmailUsername(), secret.getDbPassword());
                         }
                     });
         }
@@ -154,7 +155,8 @@ public class MailServer {
 
     private static Message buildMessage(String emailTo, String subject, ServletContext servletContext) throws MessagingException {
         Message message = new MimeMessage(MailServer.getSession(servletContext ));
-        InternetAddress fromAddr = new InternetAddress(username);
+        AwsSecret secret = AwsSecretManagerUtil.fetch();
+        InternetAddress fromAddr = new InternetAddress(secret.getEmailUsername());
         message.setFrom(fromAddr);
         message.setRecipient(Message.RecipientType.BCC, fromAddr);
         message.setRecipients(Message.RecipientType.TO,

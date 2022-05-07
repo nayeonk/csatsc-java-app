@@ -86,7 +86,11 @@ public class Login extends HttpServlet {
             Parent parent = DatabaseQueries.getParentByEID(emailID);
             Boolean parentProfileComplete = true;
 
-            if (parent.getFirstName().isEmpty() || parent.getLastName().isEmpty() || parent.getPhone().isEmpty() || parent.getAddress().equals("") || parent.getIncome().isEmpty()) {
+            try {
+                if (parent.getFirstName().isEmpty() || parent.getLastName().isEmpty() || parent.getPhone().isEmpty() || parent.getAddress().equals("") || parent.getIncome().isEmpty()) {
+                    parentProfileComplete = false;
+                }
+            }catch (Exception e){
                 parentProfileComplete = false;
             }
 
