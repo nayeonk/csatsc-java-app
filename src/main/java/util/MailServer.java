@@ -47,7 +47,7 @@ public class MailServer {
             MailServer.session = Session.getInstance(defaultProperties(),
                     new javax.mail.Authenticator() {
                         protected PasswordAuthentication getPasswordAuthentication() {
-                            return new PasswordAuthentication(secret.getEmailUsername(), secret.getDbPassword());
+                            return new PasswordAuthentication(secret.getEmailUsername(), secret.getEmailPassword());
                         }
                     });
         }
