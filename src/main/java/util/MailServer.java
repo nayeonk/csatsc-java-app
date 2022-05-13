@@ -196,7 +196,7 @@ public class MailServer {
     }
 
     public static StringBuilder parseLogIns(StringBuilder contentsFinal) {
-        String register = "<a href=\"http://summercamp.usc.edu:8080/SummerCamp/register.jsp\">";
+        String register = "<a href=\"https://summercamp.usc.edu/SummerCamp/register.jsp\">";
         List<String> logIns = Arrays.asList("log in", "logging in", "Log in", "Logging in");
         for (String logIn : logIns) {
             int offset = contentsFinal.indexOf(logIn);
@@ -219,7 +219,7 @@ public class MailServer {
             if (!(offset >= 0 && offset > instIndex - 20)) {
                 offset = contentsFinal.indexOf("click here", instIndex - 20);
             }
-            String instructions = "<a href=\"http://summercamp.usc.edu/wordpress/wp-content/uploads/2016/03/Paid-Camp-Instructions\">";
+            String instructions = "<a href=\"https://summercamp.usc.edu/wordpress/wp-content/uploads/2016/03/Paid-Camp-Instructions\">";
 //			if(offset >= 0 && offset > instIndex-20){
 //				contentsFinal.insert(offset, instructions);
 //				contentsFinal.insert(offset + instructions.length()+10, "</a>");
@@ -240,7 +240,7 @@ public class MailServer {
             if (!(offset >= 0 && offset > scheduleIndex - 50)) {
                 offset = contentsFinal.indexOf("click here", scheduleIndex - 50);
             }
-            String schedule = "<a href=\"http://summercamp.usc.edu/schedule/\">";
+            String schedule = "<a href=\"https://summercamp.usc.edu/schedule/\">";
 //			if(offset >= 0 && offset > scheduleIndex-50){
 //				contentsFinal.insert(offset, schedule);
 //				contentsFinal.insert(offset + schedule.length()+10, "</a>");
@@ -261,7 +261,7 @@ public class MailServer {
             if (!(offset >= 0 && offset > parkingIndex - 40)) {
                 offset = contentsFinal.indexOf("click here", parkingIndex - 40);
             }
-            String parking = "<a href=\"http://summercamp.usc.edu/directions-parking/\">";
+            String parking = "<a href=\"https://summercamp.usc.edu/directions-parking/\">";
 //			if(offset >= 0 && offset > parkingIndex-40){
 //				contentsFinal.insert(offset, parking);
 //				contentsFinal.insert(offset + parking.length()+10, "</a>");
