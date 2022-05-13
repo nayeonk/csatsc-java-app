@@ -1,6 +1,8 @@
 package database;
 
 import data.StringConstants;
+import model.AwsSecret;
+import util.AwsSecretManagerUtil;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -33,7 +35,7 @@ public class SQLStatements {
     static final String prependToSearchStudents = "SELECT DISTINCT p.parentID, p.fname as pfname, p.lname as plname, p.emailID, p.addressID, p.phone, i.income, ";
     static final String prependToGetStudents = "SELECT ";
 
-    static final String databaseDriver = "com.mysql.cj.jdbc.Driver";
+    static final String databaseDriver = "com.mysql.jdbc.Driver";
 
 //    static final String databaseConnectionString = String.format(
 //            "jdbc:mysql://%s:%s/summercamps?user=%s&password=%s&serverTimezone=America/Los_Angeles",
@@ -44,9 +46,12 @@ public class SQLStatements {
 //
 //    );
 
-    static final String databaseConnectionString = "jdbc:mysql://localhost:3306/summercamps?user=csatsc_admin&password=aStA7kOO9@iVsZ0/&serverTimezone=America/Los_Angeles";
 
 
+static final String getDatabaseConnectionString(){
+    AwsSecret secret = AwsSecretManagerUtil.fetch();
+    return "jdbc:mysql://"+secret.getDbHost()+":3306/"+secret.getDbName()+"?user="+secret.getDbUsername()+"&password="+secret.getDbPassword();
+}
     static final String getNamesFromClassID = "SELECT fname, lname, Student.studentID FROM Student "
             + "INNER JOIN StudentCamp ON Student.studentID = StudentCamp.studentID "
             + "INNER JOIN CampOffered ON StudentCamp.campofferedID = CampOffered.campofferedID "

@@ -13,7 +13,7 @@ public class DatabaseConnection {
     public static void connectToDatabase() {
         try {
             Class.forName(SQLStatements.databaseDriver);
-            conn = DriverManager.getConnection(SQLStatements.databaseConnectionString);
+            conn = DriverManager.getConnection(SQLStatements.getDatabaseConnectionString());
         }
         catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
