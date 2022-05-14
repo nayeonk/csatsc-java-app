@@ -23,8 +23,7 @@ import java.util.stream.Collectors;
 
 public class MailServer {
     private static final String messageOpenTags = "<html><body><div style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 200; max-width:600px; padding:20px;\">";
-    private static final String messageCloseTags = "<br><p style=\"font-size: 16px;\"><strong>Jeffrey Miller, Ph.D.</strong><br>Associate Professor of Engineering Practice<br>Department of Computer Science<br>CS@SC Summer Camps Director<br>http://summercamp.usc.edu<br><br>USC Viterbi School of Engineering<br>University of Southern California<br>941 Bloom Walk, SAL 342<br>Los Angeles, California 90089-0781<br>jeffrey.miller@usc.edu<br>213-740-7129 (office)</p></div></body></html>";
-
+    private static final String messageCloseTags = "<br><p style=\"font-size: 16px;\"><strong>CS@SC Camps</strong><br/><a href='https://summercamp.usc.edu' target='_blank'>https://summercamp.usc.edu</a><br><br>USC Viterbi School of Engineering<br>University of Southern California<br>941 Bloom Walk, SAL 342<br>Los Angeles, California 90089-0781<br>cscamps@usc.edu<br><a href=\"https://www.facebook.com/CSatSCsummercamps/\">Facebook</a> | <a href=\"https://twitter.com/SC_SummerCamps\">Twitter</a> | <a href=\"https://www.instagram.com/sc_summercamps/\">Instagram</a></p></div></body></html>";
     private static Session session;
 
     public static String getPassword(ServletContext servletContext) {
@@ -197,7 +196,7 @@ public class MailServer {
     }
 
     public static StringBuilder parseLogIns(StringBuilder contentsFinal) {
-        String register = "<a href=\"http://summercamp.usc.edu:8080/SummerCamp/register.jsp\">";
+        String register = "<a href=\"https://summercamp.usc.edu/SummerCamp/register.jsp\">";
         List<String> logIns = Arrays.asList("log in", "logging in", "Log in", "Logging in");
         for (String logIn : logIns) {
             int offset = contentsFinal.indexOf(logIn);
@@ -220,7 +219,7 @@ public class MailServer {
             if (!(offset >= 0 && offset > instIndex - 20)) {
                 offset = contentsFinal.indexOf("click here", instIndex - 20);
             }
-            String instructions = "<a href=\"http://summercamp.usc.edu/wordpress/wp-content/uploads/2016/03/Paid-Camp-Instructions\">";
+            String instructions = "<a href=\"https://summercamp.usc.edu/wordpress/wp-content/uploads/2016/03/Paid-Camp-Instructions\">";
 //			if(offset >= 0 && offset > instIndex-20){
 //				contentsFinal.insert(offset, instructions);
 //				contentsFinal.insert(offset + instructions.length()+10, "</a>");
@@ -241,7 +240,7 @@ public class MailServer {
             if (!(offset >= 0 && offset > scheduleIndex - 50)) {
                 offset = contentsFinal.indexOf("click here", scheduleIndex - 50);
             }
-            String schedule = "<a href=\"http://summercamp.usc.edu/schedule/\">";
+            String schedule = "<a href=\"https://summercamp.usc.edu/schedule/\">";
 //			if(offset >= 0 && offset > scheduleIndex-50){
 //				contentsFinal.insert(offset, schedule);
 //				contentsFinal.insert(offset + schedule.length()+10, "</a>");
@@ -262,7 +261,7 @@ public class MailServer {
             if (!(offset >= 0 && offset > parkingIndex - 40)) {
                 offset = contentsFinal.indexOf("click here", parkingIndex - 40);
             }
-            String parking = "<a href=\"http://summercamp.usc.edu/directions-parking/\">";
+            String parking = "<a href=\"https://summercamp.usc.edu/directions-parking/\">";
 //			if(offset >= 0 && offset > parkingIndex-40){
 //				contentsFinal.insert(offset, parking);
 //				contentsFinal.insert(offset + parking.length()+10, "</a>");
