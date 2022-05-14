@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 
 public class MailServer {
     private static final String messageOpenTags = "<html><body><div style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 200; max-width:600px; padding:20px;\">";
-    private static final String messageCloseTags = "<br><p style=\"font-size: 16px;\"><strong>CS@SC Camps</strong><br/><a href='https://summercamp.usc.edu' target='_blank'>https://summercamp.usc.edu</a><br><br>USC Viterbi School of Engineering<br>University of Southern California<br>941 Bloom Walk, SAL 342<br>Los Angeles, California 90089-0781<br>cscamps@usc.edu</p></div></body></html>";
+    private static final String messageCloseTags = "<br><p style=\"font-size: 16px;\"><strong>CS@SC Camps</strong><br/><a href='https://summercamp.usc.edu' target='_blank'>https://summercamp.usc.edu</a><br><br>USC Viterbi School of Engineering<br>University of Southern California<br>941 Bloom Walk, SAL 342<br>Los Angeles, California 90089-0781<br>cscamps@usc.edu<br><a href=\"https://www.facebook.com/CSatSCsummercamps/\">Facebook</a> | <a href=\"https://twitter.com/SC_SummerCamps\">Twitter</a> | <a href=\"https://www.instagram.com/sc_summercamps/\">Instagram</a></p></div></body></html>";
     private static Session session;
 
     public static String getPassword(ServletContext servletContext) {
