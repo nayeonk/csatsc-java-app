@@ -33,10 +33,16 @@ public class ParentRegistration extends HttpServlet {
         Parent parent = DatabaseQueries.getParentByPID(parentID);
         request.setAttribute("parent", parent);
 
+        System.out.println("parentId "+parent.getParentID());
         Boolean parentProfileComplete = true;
 
-        if (parent.getFirstName().isEmpty() || parent.getLastName().isEmpty() || parent.getPhone().isEmpty() || parent.getAddress().equals("") || parent.getIncome().isEmpty()) {
-            parentProfileComplete = false;
+        try {
+            if (parent.getFirstName().isEmpty() || parent.getLastName().isEmpty() || parent.getPhone().isEmpty() || parent.getAddress().equals("") || parent.getIncome().isEmpty()) {
+                parentProfileComplete = false;
+            }
+        }catch (Exception e){
+            parentProfileComplete=false;
+
         }
 
         request.getSession().setAttribute("parentProfileComplete", parentProfileComplete);

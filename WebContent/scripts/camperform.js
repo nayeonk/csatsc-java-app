@@ -35,6 +35,10 @@ function validateSFormFields(form){
 	if ((form.school.value === "-1") && (form.otherSchool.value.trim() === "")){
 		errormessage += "Please enter the name of your school.<br>";
 	}
+	if(form.school.value === ""){
+		errormessage += "Please Select a school. If your school is not listed, please select Other in the dropdown..<br>";
+		console.log(form.school.value)
+	}
 
 	if ((form.transportTo.value === "") || (form.transportFrom.value === "")){
 		errormessage += "Please tell us if your child has transportation.<br>";
